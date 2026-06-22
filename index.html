@@ -24,12 +24,17 @@
   <meta name="twitter:description" content="Original ink, watercolor &amp; salt botanical art, animal portraits, and archival prints by PAFA-trained artist Laurie Werth.">
   <meta name="twitter:image" content="https://werth-code.github.io/laurie-werth-prints/assets/art/blue-lace.jpg">
 
-  <!-- Favicon placeholder -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%233d4f36'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%23faf6ef' font-family='Georgia' font-size='16' font-weight='400'%3EL%3C/text%3E%3C/svg%3E">
+  <!-- Favicon (LW monogram) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231b1e26'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='%23f5f0e7' font-family='Georgia,serif' font-size='17'%3ELW%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts: Fraunces (display) + Hanken Grotesk (text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..560;1,9..144,300..560&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Schema.org Organization -->
+  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,10 +46,7 @@
       "@type": "Person",
       "name": "Laurie Werth",
       "jobTitle": "Fine Artist",
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "Pennsylvania Academy of the Fine Arts"
-      }
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Pennsylvania Academy of the Fine Arts" }
     },
     "areaServed": "US",
     "priceRange": "$40 - $175"
@@ -56,19 +58,22 @@
   <!-- ═══ Header ═══ -->
   <header class="header" id="header">
     <div class="header__inner">
-      <a href="#" class="header__logo">Laurie Werth <span>Fine Art</span></a>
+      <a href="#" class="header__logo" aria-label="Laurie Werth Fine Art — home">
+        <span class="header__logo-name">Laurie <span>Werth</span></span>
+        <span class="header__logo-tag">Ink · Watercolor · Salt</span>
+      </a>
 
       <nav class="header__nav" id="mainNav" aria-label="Main navigation">
-        <a href="#shop" class="header__link">Shop</a>
         <a href="#collections" class="header__link">Collections</a>
+        <a href="#shop" class="header__link">Shop</a>
         <a href="#about" class="header__link">About</a>
         <a href="#process" class="header__link">Process</a>
         <a href="#commissions" class="header__link">Commissions</a>
       </nav>
 
-      <div style="display:flex;align-items:center;gap:12px;">
+      <div class="header__actions">
         <button class="header__cart" id="cartToggle" aria-label="Open cart">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
           <span class="header__cart-count" id="cartCount" data-count="0">0</span>
         </button>
         <button class="header__mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
@@ -83,29 +88,48 @@
 
     <!-- ═══ Hero ═══ -->
     <section class="hero" id="hero">
-      <div class="hero__wash" aria-hidden="true"></div>
+      <div class="hero__bloom hero__bloom--1" aria-hidden="true"></div>
+      <div class="hero__bloom hero__bloom--2" aria-hidden="true"></div>
       <div class="hero__inner container">
         <div class="hero__content">
-          <span class="hero__eyebrow">PAFA-Trained Artist · Philadelphia</span>
+          <span class="hero__eyebrow eyebrow">PAFA-Trained Artist · Brandywine Valley</span>
           <h1 class="hero__title">
-            A Quiet Celebration<br>
-            of <em>Wild Nature</em>
+            <span class="display">A Quiet Celebration</span>
+            <span class="display">of <em>Wild Nature</em></span>
           </h1>
           <p class="hero__description">
             Botanical paintings made of ink, mineral salt, and water — where delicate lines dissolve into washes of luminous color. Available as one-of-a-kind originals and archival prints, alongside animal portraits and custom commissions.
           </p>
           <div class="hero__actions">
-            <a href="#shop" class="btn btn--primary">Shop Prints</a>
+            <a href="#shop" class="btn btn--primary">View the Work</a>
             <a href="#commissions" class="btn btn--outline">Commission a Piece</a>
           </div>
-        </div>
-        <div class="hero__image">
-          <div class="hero__image-accent hero__image-accent--1" aria-hidden="true"></div>
-          <div class="hero__image-accent hero__image-accent--2" aria-hidden="true"></div>
-          <div class="hero__image-frame">
-            <img src="assets/art/blue-lace.jpg" alt="Blue Lace — Queen Anne's lace in ink, salt, and watercolor by Laurie Werth" width="1249" height="1600" loading="eager">
+          <div class="hero__meta">
+            <div class="hero__meta-item">
+              <span class="hero__meta-value">PAFA</span>
+              <span class="hero__meta-label">Academy Trained</span>
+            </div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-value">Exhibited</span>
+              <span class="hero__meta-label">PA · NC · NJ · DE</span>
+            </div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-value">Originals &amp; Prints</span>
+              <span class="hero__meta-label">Available Now</span>
+            </div>
           </div>
         </div>
+
+        <figure class="hero__figure">
+          <img class="hero__sig" src="assets/brand/signature-ink.png" alt="Laurie Werth signature" loading="eager">
+          <div class="hero__figure-frame">
+            <img src="assets/art/blue-lace.jpg" alt="Blue Lace — Queen Anne's lace in ink, salt, and watercolor by Laurie Werth" width="1249" height="1600" loading="eager">
+          </div>
+          <figcaption class="hero__figure-caption">
+            <strong>Blue Lace</strong>
+            <span>Ink, watercolor &amp; salt</span>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
@@ -113,36 +137,48 @@
     <!-- ═══ Collections ═══ -->
     <section class="section collections" id="collections">
       <div class="container">
-        <div class="collections__header reveal">
-          <span class="label-sm">Browse by Collection</span>
-          <h2>Find Your Perfect Piece</h2>
+        <div class="section-head">
+          <div class="section-head__title reveal">
+            <span class="eyebrow">Browse by Collection</span>
+            <h2 class="heading" style="margin-top:16px;">Three bodies of <em>work</em></h2>
+          </div>
+          <div class="section-head__meta reveal">
+            <span class="index">01</span>
+            <span class="muted" style="font-size:0.8rem;">Selected works</span>
+          </div>
         </div>
         <div class="collections__grid">
           <article class="collection-card reveal reveal--delay-1" data-filter="botanical">
             <div class="collection-card__image">
+              <span class="collection-card__num">i</span>
               <img src="assets/art/night-lace.jpg" alt="Ink, Watercolor & Salt collection — botanical paintings by Laurie Werth" width="1199" height="1600" loading="lazy">
             </div>
             <div class="collection-card__body">
               <h3 class="collection-card__title">Ink, Watercolor &amp; Salt</h3>
               <p class="collection-card__count">Botanical forms in pigment &amp; water</p>
+              <span class="collection-card__cta">Explore →</span>
             </div>
           </article>
           <article class="collection-card reveal reveal--delay-2" data-filter="animals">
             <div class="collection-card__image">
+              <span class="collection-card__num">ii</span>
               <img src="assets/art/aussie.jpg" alt="Animal Portraits collection — oil and watercolor pet portraits by Laurie Werth" width="1287" height="1600" loading="lazy">
             </div>
             <div class="collection-card__body">
               <h3 class="collection-card__title">Animal Portraits</h3>
               <p class="collection-card__count">Pets &amp; wildlife, painted in oil</p>
+              <span class="collection-card__cta">Explore →</span>
             </div>
           </article>
           <article class="collection-card reveal reveal--delay-3" data-filter="landscape">
             <div class="collection-card__image">
+              <span class="collection-card__num">iii</span>
               <img src="assets/art/lake-dusk.jpg" alt="Landscapes collection — oil and ink landscapes by Laurie Werth" width="1600" height="1596" loading="lazy">
             </div>
             <div class="collection-card__body">
               <h3 class="collection-card__title">Landscapes</h3>
               <p class="collection-card__count">Quiet light, land &amp; water</p>
+              <span class="collection-card__cta">Explore →</span>
             </div>
           </article>
         </div>
@@ -150,19 +186,16 @@
     </section>
 
 
-    <div class="wash-divider" aria-hidden="true"></div>
-
-
     <!-- ═══ Shop ═══ -->
     <section class="section shop" id="shop">
       <div class="container">
-        <div class="shop__header reveal">
-          <div>
-            <span class="label-sm">The Studio Shop</span>
-            <h2>Available Work</h2>
+        <div class="section-head shop__head">
+          <div class="section-head__title reveal">
+            <span class="eyebrow">The Studio Shop</span>
+            <h2 class="heading" style="margin-top:16px;">Available <em>work</em></h2>
           </div>
-          <div class="shop__filters" role="group" aria-label="Filter by collection">
-            <button class="filter-btn filter-btn--active" data-filter="all">All Work</button>
+          <div class="shop__filters reveal" role="group" aria-label="Filter by collection">
+            <button class="filter-btn filter-btn--active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="botanical">Ink &amp; Salt</button>
             <button class="filter-btn" data-filter="animals">Animals</button>
             <button class="filter-btn" data-filter="landscape">Landscapes</button>
@@ -175,30 +208,25 @@
     </section>
 
 
-    <div class="wash-divider" aria-hidden="true"></div>
-
-
     <!-- ═══ About ═══ -->
     <section class="section about" id="about">
       <div class="container">
         <div class="about__inner">
-          <div class="about__image-wrapper reveal">
-            <div class="about__accent-line" aria-hidden="true"></div>
-            <div class="about__image">
+          <figure class="about__figure reveal">
+            <div class="about__figure-frame">
               <img src="assets/art/fern-study.jpg" alt="Fern Study — ink, salt, and watercolor botanical painting by Laurie Werth" width="1205" height="1600" loading="lazy">
             </div>
-          </div>
+            <img class="about__sig" src="assets/brand/signature-ink.png" alt="Laurie Werth signature">
+          </figure>
           <div class="reveal">
-            <span class="label-sm about__eyebrow">The Artist</span>
+            <span class="eyebrow about__eyebrow">The Artist</span>
             <h2 class="about__title">Laurie Werth</h2>
-            <p class="about__text about__text--highlight">
-              "Light and texture emerge naturally from controlled chaos."
-            </p>
+            <blockquote class="about__quote">Light and texture emerge naturally from controlled chaos.</blockquote>
             <p class="about__text">
               Laurie Werth is a classically trained painter and graduate of the Pennsylvania Academy of the Fine Arts (PAFA). Rooted in traditional technique yet guided by instinct and experimentation, she has developed an unusual ink and watercolor process that bridges drawing and painting — where delicate lines dissolve into washes of luminous color.
             </p>
             <p class="about__text">
-              Her work is a quiet celebration of wild nature. Botanical forms unfold in living patterns of pigment and water, while animals emerge with energy and grace, caught between movement and stillness. Each piece reflects a deep study of form and light, infused with a sense of wonder for the natural world.
+              Her work is a quiet celebration of wild nature. Botanical forms unfold in living patterns of pigment and water, while animals emerge with energy and grace, caught between movement and stillness — each piece a study of form and light, infused with a sense of wonder for the natural world.
             </p>
             <p class="about__text">
               Werth's paintings have been exhibited at PAFA, the Philadelphia Sketch Club, Projects Gallery (Philadelphia), Marquee (Asheville, NC), Hopkins House Gallery (Haddonfield, NJ), and Trolley Square Market (Wilmington, DE).
@@ -206,11 +234,11 @@
             <div class="about__credentials">
               <div class="credential">
                 <div class="credential__value">PAFA</div>
-                <div class="credential__label">Trained</div>
+                <div class="credential__label">Classically Trained</div>
               </div>
               <div class="credential">
-                <div class="credential__value">Exhibited</div>
-                <div class="credential__label">PA · NC · NJ · DE</div>
+                <div class="credential__value">5 Venues</div>
+                <div class="credential__label">Exhibited PA·NC·NJ·DE</div>
               </div>
               <div class="credential">
                 <div class="credential__value">Giclée</div>
@@ -226,37 +254,30 @@
     <!-- ═══ Process ═══ -->
     <section class="section process" id="process">
       <div class="container">
-        <div class="process__header reveal">
-          <span class="label-sm">How Each Print Begins</span>
-          <h2>The Process</h2>
+        <div class="process__head reveal">
+          <span class="eyebrow">How Each Piece Begins</span>
+          <h2 class="heading">Controlled <em>chaos</em></h2>
         </div>
         <div class="process__steps">
           <div class="process-step reveal reveal--delay-1">
-            <div class="process-step__icon">🖋</div>
-            <span class="process-step__number">01</span>
+            <div class="process-step__num">01</div>
             <h3 class="process-step__title">Ink Line</h3>
-            <p class="process-step__text">Each piece starts with archival ink — bold structural lines that will anchor the composition as layers build.</p>
-            <div class="process-step__connector" aria-hidden="true"></div>
+            <p class="process-step__text">Each piece begins with a sometimes wild and impulsive ink painting — the structural gesture that anchors everything to come.</p>
           </div>
           <div class="process-step reveal reveal--delay-2">
-            <div class="process-step__icon">🧂</div>
-            <span class="process-step__number">02</span>
+            <div class="process-step__num">02</div>
             <h3 class="process-step__title">Salt Texture</h3>
-            <p class="process-step__text">Mineral salt crystals are scattered into wet washes. As the water evaporates, the salt pulls pigment into organic, unrepeatable patterns.</p>
-            <div class="process-step__connector" aria-hidden="true"></div>
+            <p class="process-step__text">Mineral salt is scattered into the wet wash. As the water evaporates, it pulls pigment into organic, unrepeatable patterns.</p>
           </div>
           <div class="process-step reveal reveal--delay-3">
-            <div class="process-step__icon">💧</div>
-            <span class="process-step__number">03</span>
-            <h3 class="process-step__title">Watercolor Layers</h3>
-            <p class="process-step__text">Transparent color is built up slowly — wet-on-wet for soft blooms, dry brush for detail — allowing each layer to breathe.</p>
-            <div class="process-step__connector" aria-hidden="true"></div>
+            <div class="process-step__num">03</div>
+            <h3 class="process-step__title">Watercolor &amp; Acrylic</h3>
+            <p class="process-step__text">Transparent layers of watercolor and acrylic build slowly — movement, atmosphere, and feeling emerging from the chaos.</p>
           </div>
           <div class="process-step reveal reveal--delay-4">
-            <div class="process-step__icon">🖨</div>
-            <span class="process-step__number">04</span>
-            <h3 class="process-step__title">Archival Print</h3>
-            <p class="process-step__text">Finished originals are scanned at high resolution and printed with pigment-based giclée inks on fine art paper — rated for 100+ years of color life.</p>
+            <div class="process-step__num">04</div>
+            <h3 class="process-step__title">Original &amp; Archival Print</h3>
+            <p class="process-step__text">Each one-of-a-kind original is scanned at high resolution and printed with pigment giclée inks on fine art paper.</p>
           </div>
         </div>
       </div>
@@ -268,28 +289,16 @@
       <div class="container">
         <div class="commission__inner">
           <div class="reveal">
-            <span class="label-sm">Custom Work</span>
-            <h2 class="commission__title">Commission an Original</h2>
+            <span class="eyebrow">Custom Work</span>
+            <h2 class="commission__title">Commission an <em>original</em></h2>
             <p class="commission__text">
-              Want a botanical study of your garden, a portrait of your pet, or a piece designed for a specific room? Laurie works on a limited number of commissions each quarter.
+              A botanical study of your garden, a portrait of your pet, or a piece made for a particular wall. Laurie takes a limited number of commissions each season.
             </p>
             <div class="commission__features">
-              <div class="commission__feature">
-                <span class="commission__feature-icon">✦</span>
-                Pet portraits, garden studies, botanical arrangements
-              </div>
-              <div class="commission__feature">
-                <span class="commission__feature-icon">✦</span>
-                Ink, watercolor, and salt on archival paper
-              </div>
-              <div class="commission__feature">
-                <span class="commission__feature-icon">✦</span>
-                Includes high-resolution scan for future prints
-              </div>
-              <div class="commission__feature">
-                <span class="commission__feature-icon">✦</span>
-                Typical timeline: 4–8 weeks from approval
-              </div>
+              <div class="commission__feature"><span class="commission__feature-icon">✦</span> Pet portraits, garden studies &amp; botanical work</div>
+              <div class="commission__feature"><span class="commission__feature-icon">✦</span> Ink, watercolor &amp; salt, or oil on panel</div>
+              <div class="commission__feature"><span class="commission__feature-icon">✦</span> Includes a high-resolution scan for future prints</div>
+              <div class="commission__feature"><span class="commission__feature-icon">✦</span> Typical timeline: 4–8 weeks from approval</div>
             </div>
           </div>
           <div class="commission__form reveal reveal--delay-2">
@@ -308,7 +317,7 @@
                   <option value="">Select one…</option>
                   <option value="pet-portrait">Pet Portrait</option>
                   <option value="botanical">Botanical / Garden Study</option>
-                  <option value="wildlife">Wildlife Piece</option>
+                  <option value="landscape">Landscape</option>
                   <option value="custom">Something Else</option>
                 </select>
               </div>
@@ -323,14 +332,13 @@
                 </select>
               </div>
               <div class="form-group">
-                <label for="commStory">Tell Us About Your Vision</label>
-                <textarea id="commStory" name="story" class="form-textarea" rows="4" placeholder="Subject, size, color palette, where it will hang, any reference photos…"></textarea>
+                <label for="commStory">Tell Laurie About Your Vision</label>
+                <textarea id="commStory" name="story" class="form-textarea" rows="4" placeholder="Subject, size, palette, where it will hang, any reference photos…"></textarea>
               </div>
-              <!-- Honeypot -->
               <div style="position:absolute;left:-9999px" aria-hidden="true">
                 <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
               </div>
-              <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;">Send Inquiry</button>
+              <button type="submit" class="btn btn--primary" style="width:100%;">Send Inquiry</button>
             </form>
           </div>
         </div>
@@ -342,14 +350,14 @@
     <section class="section signup" id="signup">
       <div class="container">
         <div class="reveal">
-          <span class="label-sm" style="color:var(--sage);">Join the Studio List</span>
-          <h2 class="signup__title">New Prints, Studio Updates &amp; Early Access</h2>
+          <span class="eyebrow">Join the Studio List</span>
+          <h2 class="signup__title">New work, studio notes &amp; <em>early access</em></h2>
           <p class="signup__text">
-            Be the first to see new releases, get collector early-access pricing, and receive a free digital botanical download when you join.
+            Be the first to see new releases and receive collector early-access to one-of-a-kind originals before they reach the shop.
           </p>
           <form class="signup__form" id="signupForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <input type="email" name="email" class="signup__input btn" placeholder="your@email.com" required autocomplete="email" aria-label="Email address">
-            <button type="submit" class="btn signup__btn">Join the List</button>
+            <input type="email" name="email" class="signup__input" placeholder="your@email.com" required autocomplete="email" aria-label="Email address">
+            <button type="submit" class="btn btn--light">Join the List</button>
           </form>
           <p class="signup__note">No spam, ever. Unsubscribe anytime.</p>
         </div>
@@ -364,6 +372,7 @@
     <div class="container">
       <div class="footer__inner">
         <div>
+          <img class="footer__sig" src="assets/brand/signature-white.png" alt="Laurie Werth signature">
           <div class="footer__brand">Laurie Werth Fine Art</div>
           <p class="footer__tagline">Original ink, watercolor &amp; salt botanical paintings, animal portraits, and archival prints. A quiet celebration of wild nature.</p>
         </div>
@@ -397,7 +406,7 @@
         <p>&copy; 2026 Laurie Werth Fine Art. All rights reserved.</p>
         <div class="footer__social">
           <a href="https://www.instagram.com/lauriewerthartist/" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
           </a>
           <a href="https://www.facebook.com/profile.php?id=61565530684775" target="_blank" rel="noopener" aria-label="Facebook">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0022 12z"/></svg>
@@ -415,9 +424,7 @@
       <h3 class="cart-drawer__title">Your Cart</h3>
       <button class="cart-drawer__close" id="cartClose" aria-label="Close cart">✕</button>
     </div>
-    <div class="cart-drawer__items" id="cartItems">
-      <!-- Cart items rendered by JS -->
-    </div>
+    <div class="cart-drawer__items" id="cartItems"></div>
     <div class="cart-drawer__footer" id="cartFooter" style="display:none;">
       <div class="cart-drawer__subtotal">
         <span class="cart-drawer__subtotal-label">Subtotal</span>
@@ -434,32 +441,12 @@
   <div class="modal-overlay" id="modalOverlay"></div>
   <div class="modal" id="productModal" role="dialog" aria-label="Product details">
     <button class="modal__close" id="modalClose" aria-label="Close">✕</button>
-    <div class="modal__inner" id="modalContent">
-      <!-- Modal content rendered by JS -->
-    </div>
+    <div class="modal__inner" id="modalContent"></div>
   </div>
 
 
   <!-- ═══ Toast ═══ -->
   <div class="toast" id="toast" role="alert" aria-live="polite"></div>
-
-
-  <!-- ═══ Print Service Configuration ═══ -->
-  <!--
-    PRINT SERVICE INTEGRATION
-    ═══════════════════════════════════════════════
-    This site supports multiple print-on-demand providers.
-    Edit the config in app.js to connect your preferred service.
-
-    SUPPORTED PROVIDERS:
-    1. Snipcart  — Add your API key, products auto-configure from data attributes
-    2. Prodigi   — Requires a serverless function for API calls (Netlify/Vercel)
-    3. Printful  — Same as Prodigi, needs a proxy function
-    4. Stripe    — Pre-configure products in Stripe Dashboard, use Checkout Sessions
-    5. Manual    — Orders sent via email form (works immediately, no setup)
-
-    See README.md for setup instructions per provider.
-  -->
 
   <script src="app.js"></script>
 </body>

@@ -58,6 +58,14 @@ let cart = JSON.parse(localStorage.getItem('lw-cart') || '[]');
 let activeFilter = 'all';
 let currentModal = null;
 
+/* Display labels for collection keys (museum-caption style) */
+const COLLECTION_LABELS = {
+  botanical: 'Ink, Watercolor & Salt',
+  animals: 'Animal Portrait',
+  landscape: 'Landscape'
+};
+const collectionLabel = key => COLLECTION_LABELS[key] || key;
+
 
 /* ═══ Init ═══ */
 document.addEventListener('DOMContentLoaded', async () => {
@@ -117,10 +125,10 @@ function renderProducts(filter = 'all') {
         </div>
         <div class="product-card__body">
           <h3 class="product-card__title">${p.title}</h3>
-          <p class="product-card__collection">${p.collection}</p>
+          <p class="product-card__collection">${collectionLabel(p.collection)}</p>
           <p class="product-card__price">
             ${priceDisplay}
-            ${p.variants.length > 1 ? `<span class="product-card__price-range">${p.variants.length} options</span>` : ''}
+            ${p.variants.length > 1 ? `<span class="product-card__price-range">${p.variants.length} sizes</span>` : ''}
           </p>
         </div>
       </article>
@@ -220,7 +228,7 @@ function renderModal() {
     <div class="modal__content">
       ${product.badge ? `<span class="product-card__badge modal__badge ${product.limited ? 'product-card__badge--limited' : ''}">${product.badge}</span>` : ''}
       <h2 class="modal__title">${product.title}</h2>
-      <p class="modal__collection">${product.collection}</p>
+      <p class="modal__collection">${collectionLabel(product.collection)}</p>
       <p class="modal__description">${product.description}</p>
       ${product.artistNote ? `<blockquote class="modal__artist-note">"${product.artistNote}"</blockquote>` : ''}
       <div class="modal__variants">
@@ -356,9 +364,9 @@ function updateCartUI() {
   if (cart.length === 0) {
     itemsEl.innerHTML = `
       <div class="cart-drawer__empty">
-        <div class="cart-drawer__empty-icon">🎨</div>
+        <img class="cart-drawer__empty-icon" src="assets/brand/signature-ink.png" alt="">
         <p class="cart-drawer__empty-text">Your cart is empty</p>
-        <a href="#shop" class="btn btn--outline btn--sm" onclick="document.getElementById('cartDrawer').classList.remove('active');document.getElementById('cartOverlay').classList.remove('active');document.body.style.overflow='';">Browse Prints</a>
+        <a href="#shop" class="btn btn--outline btn--sm" onclick="document.getElementById('cartDrawer').classList.remove('active');document.getElementById('cartOverlay').classList.remove('active');document.body.style.overflow='';">Browse the Work</a>
       </div>
     `;
     return;
