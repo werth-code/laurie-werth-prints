@@ -622,12 +622,22 @@ h2.heading em { font-style: italic; }
 }
 
 @media (max-width: 768px) {
+  /* No backdrop-filter on mobile: a filtered ancestor becomes the containing
+     block for position:fixed children, which would trap the full-screen menu
+     inside the header box once the page is scrolled. Use a solid header bg. */
+  .header--scrolled {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(245, 240, 231, 0.97);
+  }
   .header__nav {
     position: fixed; inset: 0; z-index: 99;
     background: var(--paper); flex-direction: column; justify-content: center;
     gap: 28px; transform: translateX(100%); transition: transform 0.5s var(--ease);
   }
   .header__nav.header__nav--mobile { transform: translateX(0); }
+  /* Keep the logo + close button above the full-screen menu overlay */
+  .header__logo, .header__actions { position: relative; z-index: 100; }
   .header__link { font-size: 1.1rem; }
   .header__mobile-toggle { display: flex; }
   .collections__grid { grid-template-columns: 1fr; gap: 16px; }
