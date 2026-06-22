@@ -479,6 +479,34 @@ h2.heading em { font-style: italic; }
 .signup__input:focus { outline: none; border-color: var(--slate); }
 .signup__note { font-size: 0.72rem; color: rgba(253,251,246,0.45); margin-top: 18px; letter-spacing: 0.04em; }
 
+/* ═══ Instagram ════════════════════════════════════════════ */
+.instagram { background: var(--paper); text-align: center; }
+.instagram__head { display: flex; flex-direction: column; align-items: center; gap: 14px; margin-bottom: clamp(34px, 4vw, 54px); }
+.instagram__head .eyebrow { color: var(--slate-deep); }
+.instagram__handle {
+  display: inline-flex; align-items: center; gap: 12px;
+  font-family: var(--font-display); font-weight: 380; color: var(--ink);
+  font-size: clamp(1.7rem, 3vw, 2.5rem); position: relative;
+}
+.instagram__handle svg { width: clamp(24px, 3vw, 30px); height: clamp(24px, 3vw, 30px); color: var(--slate-deep); }
+.instagram__sub { color: var(--stone); max-width: 44ch; }
+
+.instagram__grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+.ig-tile { position: relative; display: block; overflow: hidden; aspect-ratio: 1; background: var(--paper-warm); }
+.ig-tile img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.95s var(--ease); }
+.ig-tile:hover img { transform: scale(1.08); }
+.ig-tile__overlay {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  background: rgba(27, 30, 38, 0); transition: background 0.45s var(--ease);
+}
+.ig-tile:hover .ig-tile__overlay { background: rgba(27, 30, 38, 0.44); }
+.ig-tile__overlay svg {
+  width: 26px; height: 26px; color: var(--salt);
+  opacity: 0; transform: scale(0.82); transition: opacity 0.45s var(--ease), transform 0.45s var(--ease);
+}
+.ig-tile:hover .ig-tile__overlay svg { opacity: 1; transform: scale(1); }
+.instagram__cta { margin-top: clamp(32px, 4vw, 48px); }
+
 /* ═══ Footer ═══════════════════════════════════════════════ */
 .footer { background: var(--ink); color: rgba(253,251,246,0.7); padding-top: clamp(60px, 7vw, 100px); padding-bottom: 36px; border-top: 1px solid var(--line-light); }
 .footer__inner { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: clamp(28px, 4vw, 56px); padding-bottom: 56px; }
@@ -642,6 +670,7 @@ h2.heading em { font-style: italic; }
   .header__mobile-toggle { display: flex; }
   .collections__grid { grid-template-columns: 1fr; gap: 16px; }
   .shop__grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .instagram__grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
   .shop__head { flex-direction: column; align-items: flex-start; gap: 24px; }
   .section-head { flex-direction: column; align-items: flex-start; gap: 18px; }
   .modal__inner { grid-template-columns: 1fr; }
