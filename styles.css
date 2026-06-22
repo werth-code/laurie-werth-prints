@@ -707,6 +707,12 @@ h2.heading em { font-style: italic; }
   .modal { max-height: 94vh; }
   .signup__form { flex-direction: column; }
   .hero__meta { flex-wrap: wrap; gap: 24px; }
+  /* Mobile: lead with the artwork above the headline */
+  .hero { padding-top: 92px; }
+  .hero__inner { display: flex; flex-direction: column; gap: 34px; }
+  .hero__figure { order: -1; max-width: 100%; }
+  .hero__figure-frame { transform: rotate(-1deg); }
+  .hero__figure-frame img { aspect-ratio: 1 / 1; }
 }
 
 @media (max-width: 480px) {
