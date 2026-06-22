@@ -1,88 +1,144 @@
 [
   {
-    "id": "wild-bloom-01",
-    "title": "Wild Bloom Study",
+    "id": "blue-lace",
+    "title": "Blue Lace",
+    "collection": "botanical",
+    "badge": "Signature Work",
+    "description": "Queen Anne's lace blooms float in drifts of slate and powder blue, with flecks of rust scattered like seed. Salt pulls the pigment into soft, frost-edged clouds that seem to hover above the page.",
+    "artistNote": "Light and texture emerge naturally from controlled chaos.",
+    "image": "assets/art/blue-lace.jpg",
+    "process": ["impulsive ink painting", "salt for texture", "layered watercolor & acrylic"],
+    "variants": [
+      { "sku": "LW-BL-8X10", "label": "8×10 archival print", "price": 45, "stock": 25, "weight": 136, "prodigiSku": "GLOBAL-FAP-8x10" },
+      { "sku": "LW-BL-11X14", "label": "11×14 archival print", "price": 70, "stock": 25, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" },
+      { "sku": "LW-BL-16X20", "label": "16×20 archival print", "price": 115, "stock": 25, "weight": 408, "prodigiSku": "GLOBAL-FAP-16x20" }
+    ]
+  },
+  {
+    "id": "night-lace",
+    "title": "Night Lace",
     "collection": "botanical",
     "badge": "Bestseller",
-    "description": "Layered botanical print with ink wash, salt texture, and wild garden movement. The organic interplay of pigment and mineral creates a one-of-a-kind depth that changes with the light.",
-    "artistNote": "This piece started as a single brushstroke and grew into an entire garden.",
-    "image": "assets/art-wild-bloom.svg",
-    "process": ["ink wash", "salt texture", "watercolor layers"],
+    "description": "Wild umbels burst in white against a deep, inky ground — salt crystals scattering light through the dark like a meadow at midnight. A study of the delicate structures and tangled rhythms of the botanical world.",
+    "artistNote": "Each piece begins with a sometimes wild and impulsive ink painting.",
+    "image": "assets/art/night-lace.jpg",
+    "process": ["impulsive ink painting", "salt for texture", "layered watercolor & acrylic"],
     "variants": [
-      { "sku": "LW-WB-8X10", "label": "8×10 archival print", "price": 45, "stock": 18, "weight": 136, "prodpiSku": "GLOBAL-FAP-8x10" },
-      { "sku": "LW-WB-11X14", "label": "11×14 archival print", "price": 72, "stock": 12, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" },
-      { "sku": "LW-WB-16X20", "label": "16×20 archival print", "price": 118, "stock": 6, "weight": 408, "prodigiSku": "GLOBAL-FAP-16x20" }
+      { "sku": "LW-NL-8X10", "label": "8×10 archival print", "price": 45, "stock": 25, "weight": 136, "prodigiSku": "GLOBAL-FAP-8x10" },
+      { "sku": "LW-NL-11X14", "label": "11×14 archival print", "price": 70, "stock": 25, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" },
+      { "sku": "LW-NL-16X20", "label": "16×20 archival print", "price": 115, "stock": 25, "weight": 408, "prodigiSku": "GLOBAL-FAP-16x20" }
     ]
   },
   {
-    "id": "salt-meadow-02",
-    "title": "Salt Meadow",
+    "id": "fern-study",
+    "title": "Fern Study",
     "collection": "botanical",
     "badge": "Open Edition",
-    "description": "Soft meadow forms, mineral blooms, and delicate paper texture for calm rooms. Salt crystals pull color away to reveal gentle, cloud-like negative space.",
-    "artistNote": "The salt does most of the work here — I just set the stage.",
-    "image": "assets/art-salt-meadow.svg",
-    "process": ["mineral salt", "wet-on-wet", "lifting"],
+    "description": "Ferns and a single wild blossom dissolve into a smoke-soft wash of greys, where ink line meets the bloom of salt. Delicate lines dissolve into washes of luminous tone.",
+    "artistNote": "A study of form and light, infused with a sense of wonder for the natural world.",
+    "image": "assets/art/fern-study.jpg",
+    "process": ["impulsive ink painting", "salt for texture", "layered watercolor & acrylic"],
     "variants": [
-      { "sku": "LW-SM-8X10", "label": "8×10 archival print", "price": 48, "stock": 14, "weight": 136, "prodigiSku": "GLOBAL-FAP-8x10" },
-      { "sku": "LW-SM-11X14", "label": "11×14 archival print", "price": 78, "stock": 10, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" }
+      { "sku": "LW-FS-8X10", "label": "8×10 archival print", "price": 45, "stock": 25, "weight": 136, "prodigiSku": "GLOBAL-FAP-8x10" },
+      { "sku": "LW-FS-11X14", "label": "11×14 archival print", "price": 70, "stock": 25, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" }
     ]
   },
   {
-    "id": "garden-vine-03",
-    "title": "Garden Vine",
+    "id": "dandelion-field",
+    "title": "Dandelion Field",
     "collection": "botanical",
-    "badge": "Pairing Pick",
-    "description": "Linear vine movement and warm botanical tones, strong as a pair or hallway piece. The flowing line work grounds the looser washes into something architectural.",
-    "artistNote": "I painted this thinking about the wisteria overtaking our back fence.",
-    "image": "assets/art-garden-vine.svg",
-    "process": ["ink line", "warm washes", "dry brush"],
+    "badge": "Open Edition",
+    "description": "Seedheads glow like small constellations across a dusky ground, caught in the moment before the wind. Movement, atmosphere, and feeling, built in translucent layers.",
+    "artistNote": "I honor the beauty of imperfection and the living pulse of the natural world.",
+    "image": "assets/art/dandelion-field.jpg",
+    "process": ["impulsive ink painting", "salt for texture", "layered watercolor & acrylic"],
     "variants": [
-      { "sku": "LW-GV-8X10", "label": "8×10 archival print", "price": 42, "stock": 20, "weight": 136, "prodigiSku": "GLOBAL-FAP-8x10" },
-      { "sku": "LW-GV-11X14", "label": "11×14 archival print", "price": 68, "stock": 11, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" }
+      { "sku": "LW-DF-8X10", "label": "8×10 archival print", "price": 45, "stock": 25, "weight": 136, "prodigiSku": "GLOBAL-FAP-8x10" },
+      { "sku": "LW-DF-11X14", "label": "11×14 archival print", "price": 70, "stock": 25, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" }
     ]
   },
   {
-    "id": "quiet-bird-04",
-    "title": "Quiet Bird",
-    "collection": "wildlife",
-    "badge": "Collector Favorite",
-    "description": "A small wildlife study with emotional presence and a quiet interior mood. Ink outlines dissolve at the edges, letting the bird emerge from soft washes of color.",
-    "artistNote": "There's something about catching a bird in stillness that feels like a gift.",
-    "image": "assets/art-quiet-bird.svg",
-    "process": ["ink outline", "wet-on-wet", "salt accents"],
+    "id": "night-mountain",
+    "title": "Night Mountain",
+    "collection": "landscape",
+    "badge": "Open Edition",
+    "description": "A dark peak rises beneath a single point of light, the sky washed in falling veils of grey. The same ink-and-salt language of the botanicals, turned toward the quiet of the land.",
+    "artistNote": "The harmony between structure and spontaneity.",
+    "image": "assets/art/night-mountain.jpg",
+    "process": ["impulsive ink painting", "salt for texture", "layered watercolor & acrylic"],
     "variants": [
-      { "sku": "LW-QB-8X10", "label": "8×10 archival print", "price": 50, "stock": 9, "weight": 136, "prodigiSku": "GLOBAL-FAP-8x10" },
-      { "sku": "LW-QB-11X14", "label": "11×14 archival print", "price": 82, "stock": 5, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" }
+      { "sku": "LW-NM-11X14", "label": "11×14 archival print", "price": 70, "stock": 25, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" },
+      { "sku": "LW-NM-16X20", "label": "16×20 archival print", "price": 115, "stock": 25, "weight": 408, "prodigiSku": "GLOBAL-FAP-16x20" }
     ]
   },
   {
-    "id": "fox-presence-05",
-    "title": "Fox Presence",
-    "collection": "wildlife",
-    "badge": "Limited Edition",
-    "description": "Signed wildlife edition for collectors who want personality, story, and scarcity. Each print is hand-signed, numbered, and includes a certificate of authenticity.",
-    "artistNote": "He sat at the edge of the yard one morning and just watched me paint. I returned the favor.",
-    "image": "assets/art-fox-presence.svg",
-    "process": ["layered washes", "ink detail", "salt bloom"],
-    "limited": true,
+    "id": "lake-dusk",
+    "title": "Lake at Dusk",
+    "collection": "landscape",
+    "badge": "Open Edition",
+    "description": "Pines lean over still water as a pastel sky melts into the lake below. An oil study in warm light and quiet, painted with energy and grace.",
+    "artistNote": "Caught between movement and stillness.",
+    "image": "assets/art/lake-dusk.jpg",
+    "process": ["oil on panel", "layered color", "alla prima"],
     "variants": [
-      { "sku": "LW-FP-11X14-LTD", "label": "11×14 signed · ed. of 50", "price": 150, "stock": 7, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" },
-      { "sku": "LW-FP-16X20-LTD", "label": "16×20 signed · ed. of 30", "price": 300, "stock": 4, "weight": 408, "prodigiSku": "GLOBAL-FAP-16x20" }
+      { "sku": "LW-LD-8X10", "label": "8×10 archival print", "price": 45, "stock": 25, "weight": 136, "prodigiSku": "GLOBAL-FAP-8x10" },
+      { "sku": "LW-LD-11X14", "label": "11×14 archival print", "price": 70, "stock": 25, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" }
     ]
   },
   {
-    "id": "pollinator-gift-06",
-    "title": "Pollinator Gift Set",
-    "collection": "gifts",
-    "badge": "Gift Ready",
-    "description": "Small botanical studies bundled for Mother's Day, garden friends, and thank-you gifts. Each set arrives wrapped and ready to give.",
-    "artistNote": "These started as sketches from our pollinator garden — the bees approve.",
-    "image": "assets/art-pollinator-gift.svg",
-    "process": ["ink sketch", "watercolor fill", "hand trimmed"],
+    "id": "gamache-henri",
+    "title": "Gamache's Henri",
+    "collection": "animals",
+    "badge": "Original Available",
+    "description": "An oil portrait of a German Shepherd, built through layered color and texture to catch not just the likeness but the living energy beneath. One-of-a-kind original — the painting itself, not a print.",
+    "artistNote": "Less about depiction and more about relationship.",
+    "image": "assets/art/gamache-henri.jpg",
+    "process": ["oil on panel", "layered color", "alla prima"],
+    "original": true,
     "variants": [
-      { "sku": "LW-PG-MINI3", "label": "Three 5×7 mini prints", "price": 72, "stock": 15, "weight": 204, "prodigiSku": "GLOBAL-FAP-5x7" },
-      { "sku": "LW-PG-CARDS", "label": "Botanical card pack (8)", "price": 28, "stock": 24, "weight": 159, "prodigiSku": "GLOBAL-GRC-A5" }
+      { "sku": "LW-GH-ORIG", "label": "Original oil painting", "price": 175, "stock": 1, "weight": 900 }
+    ]
+  },
+  {
+    "id": "black-cat",
+    "title": "Black Cat",
+    "collection": "animals",
+    "badge": "Pet Portrait",
+    "description": "A black cat emerges from warm light, coat worked in deep blues and violets so the dark reads as color, never flatness. An example of Laurie's pet portraiture, available as a print or as a custom commission.",
+    "artistNote": "Rendered with empathy and a strong recognition of their individuality and spirit.",
+    "image": "assets/art/black-cat.jpg",
+    "process": ["oil on panel", "layered color", "alla prima"],
+    "variants": [
+      { "sku": "LW-BC-8X10", "label": "8×10 archival print", "price": 40, "stock": 25, "weight": 136, "prodigiSku": "GLOBAL-FAP-8x10" },
+      { "sku": "LW-BC-11X14", "label": "11×14 archival print", "price": 65, "stock": 25, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" }
+    ]
+  },
+  {
+    "id": "the-aussie",
+    "title": "Australian Shepherd",
+    "collection": "animals",
+    "badge": "Pet Portrait",
+    "description": "A red-merle Aussie caught mid-grin against summer green, one blue eye and one amber. The kind of likeness that makes a family stop in the hallway. Available as a print or as a custom pet commission.",
+    "artistNote": "Capturing the presence and personality of the creatures that share our world.",
+    "image": "assets/art/aussie.jpg",
+    "process": ["oil on panel", "layered color", "alla prima"],
+    "variants": [
+      { "sku": "LW-AU-8X10", "label": "8×10 archival print", "price": 40, "stock": 25, "weight": 136, "prodigiSku": "GLOBAL-FAP-8x10" },
+      { "sku": "LW-AU-11X14", "label": "11×14 archival print", "price": 65, "stock": 25, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" }
+    ]
+  },
+  {
+    "id": "bay-horse",
+    "title": "Braided Bay",
+    "collection": "animals",
+    "badge": "Equine",
+    "description": "A bay horse turned out for the show ring, mane in button braids, painted with a quiet attention to the animal's poise. Equine portraiture available as a print or as a custom commission.",
+    "artistNote": "The living energy beneath the surface likeness.",
+    "image": "assets/art/bay-horse.jpg",
+    "process": ["oil on canvas", "layered color", "alla prima"],
+    "variants": [
+      { "sku": "LW-BH-8X10", "label": "8×10 archival print", "price": 40, "stock": 25, "weight": 136, "prodigiSku": "GLOBAL-FAP-8x10" },
+      { "sku": "LW-BH-11X14", "label": "11×14 archival print", "price": 65, "stock": 25, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" }
     ]
   }
 ]

@@ -2,3 +2,6 @@
 .claude/
 node_modules/
 *.log
+
+# Full-resolution original scans (kept locally for print fulfillment, too large for Pages)
+source-art/

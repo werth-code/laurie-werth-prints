@@ -413,7 +413,7 @@ h4 { font-size: 1.25rem; font-weight: 500; }
 
 .collections__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
