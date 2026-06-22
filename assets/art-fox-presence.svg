@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1125" role="img" aria-labelledby="title desc">
+  <title id="title">Fox Presence placeholder</title>
+  <desc id="desc">Fox wildlife limited edition placeholder.</desc>
+  <rect width="900" height="1125" fill="#fbf6ec"/>
+  <path d="M238 402 L336 198 L432 374 L572 374 L674 200 L674 444 C754 602 664 790 452 806 C242 790 154 598 238 402Z" fill="#a76042" opacity=".86"/>
+  <path d="M314 554 C372 480 524 480 586 554 C556 662 346 664 314 554Z" fill="#f4ded0"/>
+  <path d="M392 600 C420 620 480 620 510 600 C486 666 420 666 392 600Z" fill="#20231f" opacity=".88"/>
+  <circle cx="360" cy="494" r="15" fill="#20231f"/>
+  <circle cx="542" cy="494" r="15" fill="#20231f"/>
+  <path d="M450 540 C474 540 494 552 494 568 C494 588 472 604 450 604 C428 604 406 588 406 568 C406 552 426 540 450 540Z" fill="#20231f"/>
+  <g fill="none" stroke="#20231f" stroke-width="5" opacity=".38">
+    <path d="M310 612 C220 598 158 560 104 506"/>
+    <path d="M590 612 C686 594 746 556 802 502"/>
+    <path d="M328 650 C230 660 166 694 104 752"/>
+    <path d="M572 650 C672 660 734 694 796 752"/>
+  </g>
+</svg>

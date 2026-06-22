@@ -1,0 +1,88 @@
+[
+  {
+    "id": "wild-bloom-01",
+    "title": "Wild Bloom Study",
+    "collection": "botanical",
+    "badge": "Bestseller",
+    "description": "Layered botanical print with ink wash, salt texture, and wild garden movement. The organic interplay of pigment and mineral creates a one-of-a-kind depth that changes with the light.",
+    "artistNote": "This piece started as a single brushstroke and grew into an entire garden.",
+    "image": "assets/art-wild-bloom.svg",
+    "process": ["ink wash", "salt texture", "watercolor layers"],
+    "variants": [
+      { "sku": "LW-WB-8X10", "label": "8×10 archival print", "price": 45, "stock": 18, "weight": 136, "prodpiSku": "GLOBAL-FAP-8x10" },
+      { "sku": "LW-WB-11X14", "label": "11×14 archival print", "price": 72, "stock": 12, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" },
+      { "sku": "LW-WB-16X20", "label": "16×20 archival print", "price": 118, "stock": 6, "weight": 408, "prodigiSku": "GLOBAL-FAP-16x20" }
+    ]
+  },
+  {
+    "id": "salt-meadow-02",
+    "title": "Salt Meadow",
+    "collection": "botanical",
+    "badge": "Open Edition",
+    "description": "Soft meadow forms, mineral blooms, and delicate paper texture for calm rooms. Salt crystals pull color away to reveal gentle, cloud-like negative space.",
+    "artistNote": "The salt does most of the work here — I just set the stage.",
+    "image": "assets/art-salt-meadow.svg",
+    "process": ["mineral salt", "wet-on-wet", "lifting"],
+    "variants": [
+      { "sku": "LW-SM-8X10", "label": "8×10 archival print", "price": 48, "stock": 14, "weight": 136, "prodigiSku": "GLOBAL-FAP-8x10" },
+      { "sku": "LW-SM-11X14", "label": "11×14 archival print", "price": 78, "stock": 10, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" }
+    ]
+  },
+  {
+    "id": "garden-vine-03",
+    "title": "Garden Vine",
+    "collection": "botanical",
+    "badge": "Pairing Pick",
+    "description": "Linear vine movement and warm botanical tones, strong as a pair or hallway piece. The flowing line work grounds the looser washes into something architectural.",
+    "artistNote": "I painted this thinking about the wisteria overtaking our back fence.",
+    "image": "assets/art-garden-vine.svg",
+    "process": ["ink line", "warm washes", "dry brush"],
+    "variants": [
+      { "sku": "LW-GV-8X10", "label": "8×10 archival print", "price": 42, "stock": 20, "weight": 136, "prodigiSku": "GLOBAL-FAP-8x10" },
+      { "sku": "LW-GV-11X14", "label": "11×14 archival print", "price": 68, "stock": 11, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" }
+    ]
+  },
+  {
+    "id": "quiet-bird-04",
+    "title": "Quiet Bird",
+    "collection": "wildlife",
+    "badge": "Collector Favorite",
+    "description": "A small wildlife study with emotional presence and a quiet interior mood. Ink outlines dissolve at the edges, letting the bird emerge from soft washes of color.",
+    "artistNote": "There's something about catching a bird in stillness that feels like a gift.",
+    "image": "assets/art-quiet-bird.svg",
+    "process": ["ink outline", "wet-on-wet", "salt accents"],
+    "variants": [
+      { "sku": "LW-QB-8X10", "label": "8×10 archival print", "price": 50, "stock": 9, "weight": 136, "prodigiSku": "GLOBAL-FAP-8x10" },
+      { "sku": "LW-QB-11X14", "label": "11×14 archival print", "price": 82, "stock": 5, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" }
+    ]
+  },
+  {
+    "id": "fox-presence-05",
+    "title": "Fox Presence",
+    "collection": "wildlife",
+    "badge": "Limited Edition",
+    "description": "Signed wildlife edition for collectors who want personality, story, and scarcity. Each print is hand-signed, numbered, and includes a certificate of authenticity.",
+    "artistNote": "He sat at the edge of the yard one morning and just watched me paint. I returned the favor.",
+    "image": "assets/art-fox-presence.svg",
+    "process": ["layered washes", "ink detail", "salt bloom"],
+    "limited": true,
+    "variants": [
+      { "sku": "LW-FP-11X14-LTD", "label": "11×14 signed · ed. of 50", "price": 150, "stock": 7, "weight": 227, "prodigiSku": "GLOBAL-FAP-11x14" },
+      { "sku": "LW-FP-16X20-LTD", "label": "16×20 signed · ed. of 30", "price": 300, "stock": 4, "weight": 408, "prodigiSku": "GLOBAL-FAP-16x20" }
+    ]
+  },
+  {
+    "id": "pollinator-gift-06",
+    "title": "Pollinator Gift Set",
+    "collection": "gifts",
+    "badge": "Gift Ready",
+    "description": "Small botanical studies bundled for Mother's Day, garden friends, and thank-you gifts. Each set arrives wrapped and ready to give.",
+    "artistNote": "These started as sketches from our pollinator garden — the bees approve.",
+    "image": "assets/art-pollinator-gift.svg",
+    "process": ["ink sketch", "watercolor fill", "hand trimmed"],
+    "variants": [
+      { "sku": "LW-PG-MINI3", "label": "Three 5×7 mini prints", "price": 72, "stock": 15, "weight": 204, "prodigiSku": "GLOBAL-FAP-5x7" },
+      { "sku": "LW-PG-CARDS", "label": "Botanical card pack (8)", "price": 28, "stock": 24, "weight": 159, "prodigiSku": "GLOBAL-GRC-A5" }
+    ]
+  }
+]

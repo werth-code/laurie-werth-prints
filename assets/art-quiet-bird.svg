@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1125" role="img" aria-labelledby="title desc">
+  <title id="title">Quiet Bird placeholder</title>
+  <desc id="desc">Small bird wildlife print placeholder.</desc>
+  <rect width="900" height="1125" fill="#f7efe3"/>
+  <circle cx="450" cy="486" r="276" fill="#d8e0cc"/>
+  <path d="M250 718 C380 604 562 612 704 722" fill="none" stroke="#46583f" stroke-width="13" stroke-linecap="round"/>
+  <path d="M334 534 C378 384 558 334 640 446 C712 546 610 682 448 644 C360 624 308 604 334 534Z" fill="#8c9f82"/>
+  <path d="M518 420 C584 356 690 390 728 456 C646 468 584 454 518 420Z" fill="#a76042"/>
+  <circle cx="584" cy="434" r="12" fill="#20231f"/>
+  <path d="M336 548 C258 512 212 464 180 398 C282 414 344 462 336 548Z" fill="#b97874" opacity=".86"/>
+  <path d="M438 642 C414 714 382 772 326 830" stroke="#20231f" stroke-width="6" stroke-linecap="round"/>
+  <path d="M500 646 C492 724 502 788 536 858" stroke="#20231f" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#fffaf1" opacity=".7">
+    <circle cx="380" cy="448" r="16"/><circle cx="430" cy="406" r="9"/><circle cx="500" cy="538" r="11"/>
+  </g>
+</svg>
