@@ -490,6 +490,8 @@ h2.heading em { font-style: italic; }
   position: relative; aspect-ratio: 9/16; overflow: hidden;
   background: var(--ink); cursor: pointer; box-shadow: var(--shadow-soft);
 }
+/* Wide variant for landscape (16:9) tutorial films */
+.watch--wide .video-card__frame { aspect-ratio: 16/9; }
 .video-card__frame img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.95s var(--ease), filter 0.5s var(--ease); }
 .video-card__frame:hover img { transform: scale(1.05); filter: brightness(0.9); }
 .video-card__frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
@@ -534,6 +536,34 @@ h2.heading em { font-style: italic; }
 }
 .ig-tile:hover .ig-tile__overlay svg { opacity: 1; transform: scale(1); }
 .instagram__cta { margin-top: clamp(32px, 4vw, 48px); }
+
+/* ═══ Learn page ═══════════════════════════════════════════ */
+.learn-hero { background: var(--paper); padding-top: clamp(132px, 17vh, 210px); padding-bottom: clamp(48px, 6vw, 80px); text-align: center; position: relative; overflow: hidden; }
+.learn-hero .hero__bloom--1 { top: -80px; left: -120px; }
+.learn-hero__inner { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 20px; position: relative; z-index: 2; }
+.learn-hero__title { font-family: var(--font-display); font-weight: 340; font-size: clamp(2.6rem, 6vw, 5rem); letter-spacing: -0.025em; line-height: 1; }
+.learn-hero__title em { font-style: italic; }
+.learn-hero__lead { color: #3a3f49; font-size: 1.08rem; line-height: 1.75; max-width: 56ch; }
+.learn-hero__links { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-top: 10px; }
+
+.insights { background: var(--paper-warm); }
+.insights__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(18px, 2.4vw, 32px); }
+.insight-card { background: var(--salt); padding: clamp(28px, 3vw, 46px); border: 1px solid var(--line-soft); }
+.insight-card__num { font-family: var(--font-display); font-style: italic; color: var(--slate); font-size: 1.3rem; margin-bottom: 16px; }
+.insight-card__title { font-size: 1.5rem; font-weight: 400; margin-bottom: 12px; }
+.insight-card__text { color: #3a3f49; line-height: 1.7; }
+
+.supplies { background: var(--paper-warm); }
+.supplies__disclosure { text-align: center; font-style: italic; font-size: 0.84rem; color: var(--stone); max-width: 62ch; margin: 0 auto clamp(36px, 4vw, 54px); }
+.supplies__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(18px, 2.4vw, 30px); }
+.supply-card { background: var(--salt); padding: clamp(26px, 2.6vw, 38px); border: 1px solid var(--line-soft); display: flex; flex-direction: column; }
+.supply-card__icon { width: 32px; height: 32px; color: var(--slate-deep); margin-bottom: 18px; }
+.supply-card__name { font-family: var(--font-display); font-size: 1.32rem; font-weight: 400; margin-bottom: 8px; }
+.supply-card__desc { color: #3a3f49; font-size: 0.95rem; line-height: 1.65; margin-bottom: 22px; flex: 1; }
+.supply-card__link { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink); display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; transition: color 0.35s var(--ease); }
+.supply-card__link::after { content: "→"; transition: transform 0.4s var(--ease); }
+.supply-card__link:hover { color: var(--slate-deep); }
+.supply-card__link:hover::after { transform: translateX(4px); }
 
 /* ═══ Footer ═══════════════════════════════════════════════ */
 .footer { background: var(--ink); color: rgba(253,251,246,0.7); padding-top: clamp(60px, 7vw, 100px); padding-bottom: 36px; border-top: 1px solid var(--line-light); }
@@ -675,6 +705,7 @@ h2.heading em { font-style: italic; }
   .process__steps { grid-template-columns: repeat(2, 1fr); gap: 40px 32px; }
   .process-step::after { display: none; }
   .footer__inner { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .supplies__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
@@ -700,6 +731,9 @@ h2.heading em { font-style: italic; }
   .shop__grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
   .instagram__grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
   .watch__grid { grid-template-columns: 1fr; gap: 28px; max-width: 300px; margin-inline: auto; }
+  .watch--wide .watch__grid { max-width: 440px; }
+  .insights__grid { grid-template-columns: 1fr; }
+  .supplies__grid { grid-template-columns: 1fr; }
   .shop__head { flex-direction: column; align-items: flex-start; gap: 24px; }
   .section-head { flex-direction: column; align-items: flex-start; gap: 18px; }
   .modal__inner { grid-template-columns: 1fr; }
