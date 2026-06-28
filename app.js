@@ -57,6 +57,7 @@ let products = [];
 let cart = JSON.parse(localStorage.getItem('lw-cart') || '[]');
 let activeFilter = 'all';
 let currentModal = null;
+let paintPalettes = {};
 
 /* Display labels for collection keys (museum-caption style) */
 const COLLECTION_LABELS = {
@@ -70,6 +71,7 @@ const collectionLabel = key => COLLECTION_LABELS[key] || key;
 /* ═══ Init ═══ */
 document.addEventListener('DOMContentLoaded', async () => {
   await loadProducts();
+  await loadPalettes();
   renderProducts();
   updateCartUI();
   initHeader();
@@ -77,6 +79,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   initCollectionCards();
   initCart();
   initModal();
+  initPaletteModal();
   initScrollReveal();
   initMobileMenu();
   initForms();
@@ -92,6 +95,15 @@ async function loadProducts() {
     products = await res.json();
   } catch {
     products = [];
+  }
+}
+
+async function loadPalettes() {
+  try {
+    const res = await fetch('data/paints/palettes.json');
+    paintPalettes = await res.json();
+  } catch {
+    paintPalettes = {};
   }
 }
 
@@ -132,6 +144,11 @@ function renderProducts(filter = 'all') {
             ${p.variants.length > 1 ? `<span class="product-card__price-range">${p.variants.length} sizes</span>` : ''}
           </p>
         </div>
+        ${paintPalettes[p.id] ? `
+        <button type="button" class="product-card__palette" data-action="palette" data-product="${p.id}" aria-label="Shop the paint palette for ${p.title}">
+          <span class="product-card__palette-swatches">${paintPalettes[p.id].palette.map(c => `<span style="background:${c.hex}"></span>`).join('')}</span>
+          <span class="product-card__palette-label">Shop the palette →</span>
+        </button>` : ''}
       </article>
     `;
   }).join('');
@@ -270,6 +287,58 @@ function renderModal() {
     closeModal();
     openCart();
   });
+}
+
+
+/* ═══ Shop-the-Palette Modal ═══ */
+function paintBuyUrl(name) {
+  // Per-color Blick search — swap to CJ/Blick affiliate deep link on launch
+  return 'https://www.dickblick.com/search/?q=' + encodeURIComponent('Winsor Newton Professional Watercolour ' + name);
+}
+function initPaletteModal() {
+  document.addEventListener('click', e => {
+    const trigger = e.target.closest('[data-action="palette"]');
+    if (trigger) { e.preventDefault(); openPaletteModal(trigger.dataset.product); }
+  });
+  document.getElementById('paletteClose')?.addEventListener('click', closePaletteModal);
+  document.getElementById('paletteOverlay')?.addEventListener('click', closePaletteModal);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closePaletteModal(); });
+}
+function openPaletteModal(id) {
+  const data = paintPalettes[id];
+  if (!data) return;
+  const product = products.find(p => p.id === id);
+  const seen = new Set();
+  const uniq = data.matches.filter(m => { if (seen.has(m.name)) return false; seen.add(m.name); return true; });
+  const content = document.getElementById('paletteModalContent');
+  content.innerHTML = `
+    <span class="eyebrow" style="color:var(--slate-deep);">Shop the Palette</span>
+    <h2 class="palette-modal__title">${product ? product.title : 'Palette'}</h2>
+    <p class="palette-modal__sub">The Winsor &amp; Newton Professional Watercolours closest to the colors in this piece.</p>
+    <div class="palette-modal__list">
+      ${uniq.map(m => `
+        <a class="palette-row" href="${paintBuyUrl(m.name)}" target="_blank" rel="sponsored noopener">
+          <span class="palette-row__sw">
+            <span class="palette-row__from" style="background:${m.photo}" title="In the painting"></span>
+            <span class="palette-row__to" style="background:${m.hex}" title="${m.name}"></span>
+          </span>
+          <span class="palette-row__body">
+            <span class="palette-row__name">${m.name}</span>
+            <span class="ps-tag ${m.cls}">${m.label}</span>
+          </span>
+          <span class="palette-row__buy">Shop at Blick →</span>
+        </a>`).join('')}
+    </div>
+    <p class="palette-modal__note">Closest matches from digital swatches — a place to start, not exact. Links go to Blick; as an affiliate, Laurie may earn from qualifying purchases at no additional cost to you.</p>
+  `;
+  document.getElementById('paletteOverlay')?.classList.add('active');
+  document.getElementById('paletteModal')?.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closePaletteModal() {
+  document.getElementById('paletteOverlay')?.classList.remove('active');
+  document.getElementById('paletteModal')?.classList.remove('active');
+  if (!document.getElementById('productModal')?.classList.contains('active')) document.body.style.overflow = '';
 }
 
 

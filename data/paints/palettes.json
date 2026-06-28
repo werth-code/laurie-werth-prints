@@ -1,0 +1,782 @@
+{
+  "blue-lace": {
+    "palette": [
+      {
+        "hex": "#9b9594",
+        "pct": 36
+      },
+      {
+        "hex": "#b8b4b6",
+        "pct": 18
+      },
+      {
+        "hex": "#777273",
+        "pct": 15
+      },
+      {
+        "hex": "#59504f",
+        "pct": 12
+      },
+      {
+        "hex": "#3a302e",
+        "pct": 10
+      },
+      {
+        "hex": "#15100f",
+        "pct": 9
+      }
+    ],
+    "matches": [
+      {
+        "photo": "#9b9594",
+        "name": "Davy's Gray",
+        "hex": "#8E8D7E",
+        "family": "Gray",
+        "label": "Neutral match",
+        "cls": "ps-tag--good"
+      },
+      {
+        "photo": "#b8b4b6",
+        "name": "Davy's Gray",
+        "hex": "#8E8D7E",
+        "family": "Gray",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      },
+      {
+        "photo": "#777273",
+        "name": "Davy's Gray",
+        "hex": "#8E8D7E",
+        "family": "Gray",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      },
+      {
+        "photo": "#59504f",
+        "name": "Mars Black",
+        "hex": "#3A4149",
+        "family": "Black",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      },
+      {
+        "photo": "#3a302e",
+        "name": "Sepia",
+        "hex": "#452E2D",
+        "family": "Brown",
+        "label": "Neutral match",
+        "cls": "ps-tag--good"
+      },
+      {
+        "photo": "#15100f",
+        "name": "Neutral Tint",
+        "hex": "#030000",
+        "family": "Black",
+        "label": "Neutral match",
+        "cls": "ps-tag--good"
+      }
+    ]
+  },
+  "night-lace": {
+    "palette": [
+      {
+        "hex": "#5f5a5e",
+        "pct": 29
+      },
+      {
+        "hex": "#252123",
+        "pct": 19
+      },
+      {
+        "hex": "#6f6b6f",
+        "pct": 16
+      },
+      {
+        "hex": "#4a464a",
+        "pct": 15
+      },
+      {
+        "hex": "#363235",
+        "pct": 13
+      },
+      {
+        "hex": "#8b888d",
+        "pct": 9
+      }
+    ],
+    "matches": [
+      {
+        "photo": "#5f5a5e",
+        "name": "Mars Black",
+        "hex": "#3A4149",
+        "family": "Black",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      },
+      {
+        "photo": "#252123",
+        "name": "Paynes Grey",
+        "hex": "#1E2325",
+        "family": "Gray",
+        "label": "Neutral match",
+        "cls": "ps-tag--good"
+      },
+      {
+        "photo": "#6f6b6f",
+        "name": "Mars Black",
+        "hex": "#3A4149",
+        "family": "Black",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      },
+      {
+        "photo": "#4a464a",
+        "name": "Mars Black",
+        "hex": "#3A4149",
+        "family": "Black",
+        "label": "Neutral match",
+        "cls": "ps-tag--good"
+      },
+      {
+        "photo": "#363235",
+        "name": "Mars Black",
+        "hex": "#3A4149",
+        "family": "Black",
+        "label": "Neutral match",
+        "cls": "ps-tag--good"
+      },
+      {
+        "photo": "#8b888d",
+        "name": "Davy's Gray",
+        "hex": "#8E8D7E",
+        "family": "Gray",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      }
+    ]
+  },
+  "fern-study": {
+    "palette": [
+      {
+        "hex": "#c0b9b6",
+        "pct": 21
+      },
+      {
+        "hex": "#645a58",
+        "pct": 21
+      },
+      {
+        "hex": "#837a77",
+        "pct": 16
+      },
+      {
+        "hex": "#443b39",
+        "pct": 16
+      },
+      {
+        "hex": "#a49a98",
+        "pct": 16
+      },
+      {
+        "hex": "#1d1817",
+        "pct": 9
+      }
+    ],
+    "matches": [
+      {
+        "photo": "#c0b9b6",
+        "name": "Davy's Gray",
+        "hex": "#8E8D7E",
+        "family": "Gray",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      },
+      {
+        "photo": "#645a58",
+        "name": "Mars Black",
+        "hex": "#3A4149",
+        "family": "Black",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      },
+      {
+        "photo": "#837a77",
+        "name": "Davy's Gray",
+        "hex": "#8E8D7E",
+        "family": "Gray",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      },
+      {
+        "photo": "#443b39",
+        "name": "Sepia",
+        "hex": "#452E2D",
+        "family": "Brown",
+        "label": "Neutral match",
+        "cls": "ps-tag--good"
+      },
+      {
+        "photo": "#a49a98",
+        "name": "Davy's Gray",
+        "hex": "#8E8D7E",
+        "family": "Gray",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      },
+      {
+        "photo": "#1d1817",
+        "name": "Neutral Tint",
+        "hex": "#030000",
+        "family": "Black",
+        "label": "Neutral match",
+        "cls": "ps-tag--good"
+      }
+    ]
+  },
+  "dandelion-field": {
+    "palette": [
+      {
+        "hex": "#767775",
+        "pct": 22
+      },
+      {
+        "hex": "#595957",
+        "pct": 20
+      },
+      {
+        "hex": "#929493",
+        "pct": 18
+      },
+      {
+        "hex": "#333331",
+        "pct": 16
+      },
+      {
+        "hex": "#151514",
+        "pct": 15
+      },
+      {
+        "hex": "#c4c5c3",
+        "pct": 8
+      }
+    ],
+    "matches": [
+      {
+        "photo": "#767775",
+        "name": "Davy's Gray",
+        "hex": "#8E8D7E",
+        "family": "Gray",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      },
+      {
+        "photo": "#595957",
+        "name": "Mars Black",
+        "hex": "#3A4149",
+        "family": "Black",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      },
+      {
+        "photo": "#929493",
+        "name": "Davy's Gray",
+        "hex": "#8E8D7E",
+        "family": "Gray",
+        "label": "Neutral match",
+        "cls": "ps-tag--good"
+      },
+      {
+        "photo": "#333331",
+        "name": "Paynes Grey",
+        "hex": "#1E2325",
+        "family": "Gray",
+        "label": "Neutral match",
+        "cls": "ps-tag--good"
+      },
+      {
+        "photo": "#151514",
+        "name": "Ivory Black",
+        "hex": "#000000",
+        "family": "Black",
+        "label": "Neutral match",
+        "cls": "ps-tag--good"
+      },
+      {
+        "photo": "#c4c5c3",
+        "name": "Chinese White",
+        "hex": "#FFFFFF",
+        "family": "White",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      }
+    ]
+  },
+  "night-mountain": {
+    "palette": [
+      {
+        "hex": "#9c9290",
+        "pct": 25
+      },
+      {
+        "hex": "#817776",
+        "pct": 23
+      },
+      {
+        "hex": "#2b2626",
+        "pct": 22
+      },
+      {
+        "hex": "#c0b6b4",
+        "pct": 12
+      },
+      {
+        "hex": "#675f5e",
+        "pct": 12
+      },
+      {
+        "hex": "#433c3c",
+        "pct": 7
+      }
+    ],
+    "matches": [
+      {
+        "photo": "#9c9290",
+        "name": "Davy's Gray",
+        "hex": "#8E8D7E",
+        "family": "Gray",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      },
+      {
+        "photo": "#817776",
+        "name": "Davy's Gray",
+        "hex": "#8E8D7E",
+        "family": "Gray",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      },
+      {
+        "photo": "#2b2626",
+        "name": "Paynes Grey",
+        "hex": "#1E2325",
+        "family": "Gray",
+        "label": "Neutral match",
+        "cls": "ps-tag--good"
+      },
+      {
+        "photo": "#c0b6b4",
+        "name": "Davy's Gray",
+        "hex": "#8E8D7E",
+        "family": "Gray",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      },
+      {
+        "photo": "#675f5e",
+        "name": "Mars Black",
+        "hex": "#3A4149",
+        "family": "Black",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      },
+      {
+        "photo": "#433c3c",
+        "name": "Mars Black",
+        "hex": "#3A4149",
+        "family": "Black",
+        "label": "Neutral match",
+        "cls": "ps-tag--good"
+      }
+    ]
+  },
+  "lake-dusk": {
+    "palette": [
+      {
+        "hex": "#adc3d6",
+        "pct": 31
+      },
+      {
+        "hex": "#9d96af",
+        "pct": 18
+      },
+      {
+        "hex": "#c4b6ae",
+        "pct": 17
+      },
+      {
+        "hex": "#766620",
+        "pct": 14
+      },
+      {
+        "hex": "#958e6a",
+        "pct": 11
+      },
+      {
+        "hex": "#4c3d1c",
+        "pct": 10
+      }
+    ],
+    "matches": [
+      {
+        "photo": "#adc3d6",
+        "name": "Antwerp Blue",
+        "hex": "#2A4355",
+        "family": "Blue",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#9d96af",
+        "name": "Indanthrene Blue",
+        "hex": "#3E3B9F",
+        "family": "Blue",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#c4b6ae",
+        "name": "Gold Ochre",
+        "hex": "#DB823D",
+        "family": "Brown",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#766620",
+        "name": "Winsor Yellow",
+        "hex": "#FFDF56",
+        "family": "Yellow",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#958e6a",
+        "name": "Lemon Yellow (Nickel Titanate)",
+        "hex": "#F1DD4A",
+        "family": "Yellow",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#4c3d1c",
+        "name": "Raw Umber",
+        "hex": "#76571C",
+        "family": "Brown",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      }
+    ]
+  },
+  "gamache-henri": {
+    "palette": [
+      {
+        "hex": "#efefee",
+        "pct": 56
+      },
+      {
+        "hex": "#211f1f",
+        "pct": 12
+      },
+      {
+        "hex": "#b1bdcb",
+        "pct": 10
+      },
+      {
+        "hex": "#433a36",
+        "pct": 10
+      },
+      {
+        "hex": "#795f52",
+        "pct": 8
+      },
+      {
+        "hex": "#b8906c",
+        "pct": 5
+      }
+    ],
+    "matches": [
+      {
+        "photo": "#efefee",
+        "name": "Chinese White",
+        "hex": "#FFFFFF",
+        "family": "White",
+        "label": "Neutral match",
+        "cls": "ps-tag--good"
+      },
+      {
+        "photo": "#211f1f",
+        "name": "Paynes Grey",
+        "hex": "#1E2325",
+        "family": "Gray",
+        "label": "Neutral match",
+        "cls": "ps-tag--good"
+      },
+      {
+        "photo": "#b1bdcb",
+        "name": "Indigo",
+        "hex": "#05263B",
+        "family": "Blue",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#433a36",
+        "name": "Sepia",
+        "hex": "#452E2D",
+        "family": "Brown",
+        "label": "Neutral match",
+        "cls": "ps-tag--good"
+      },
+      {
+        "photo": "#795f52",
+        "name": "Brown Ochre",
+        "hex": "#8C4221",
+        "family": "Brown",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#b8906c",
+        "name": "Raw Sienna",
+        "hex": "#DD9341",
+        "family": "Brown",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      }
+    ]
+  },
+  "black-cat": {
+    "palette": [
+      {
+        "hex": "#e1ceaa",
+        "pct": 37
+      },
+      {
+        "hex": "#191924",
+        "pct": 19
+      },
+      {
+        "hex": "#3f404e",
+        "pct": 13
+      },
+      {
+        "hex": "#aca88e",
+        "pct": 11
+      },
+      {
+        "hex": "#ccc0c4",
+        "pct": 10
+      },
+      {
+        "hex": "#696b7a",
+        "pct": 9
+      }
+    ],
+    "matches": [
+      {
+        "photo": "#e1ceaa",
+        "name": "Yellow Ochre Light",
+        "hex": "#B99529",
+        "family": "Orange",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#191924",
+        "name": "French Ultramarine",
+        "hex": "#1846AB",
+        "family": "Blue",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#3f404e",
+        "name": "Ultramarine Blue (Green Shade)",
+        "hex": "#32539D",
+        "family": "Blue",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#aca88e",
+        "name": "Olive Green",
+        "hex": "#A0A719",
+        "family": "Yellow",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#ccc0c4",
+        "name": "Chinese White",
+        "hex": "#FFFFFF",
+        "family": "White",
+        "label": "Closest neutral",
+        "cls": "ps-tag--approx"
+      },
+      {
+        "photo": "#696b7a",
+        "name": "Ultramarine Blue (Green Shade)",
+        "hex": "#32539D",
+        "family": "Blue",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      }
+    ]
+  },
+  "the-aussie": {
+    "palette": [
+      {
+        "hex": "#b79b82",
+        "pct": 22
+      },
+      {
+        "hex": "#4e5b1d",
+        "pct": 19
+      },
+      {
+        "hex": "#e5ceb1",
+        "pct": 17
+      },
+      {
+        "hex": "#896752",
+        "pct": 17
+      },
+      {
+        "hex": "#523c32",
+        "pct": 14
+      },
+      {
+        "hex": "#82823a",
+        "pct": 10
+      }
+    ],
+    "matches": [
+      {
+        "photo": "#b79b82",
+        "name": "Raw Sienna",
+        "hex": "#DD9341",
+        "family": "Brown",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#4e5b1d",
+        "name": "Olive",
+        "hex": "#616D29",
+        "family": "Green",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#e5ceb1",
+        "name": "Raw Umber",
+        "hex": "#76571C",
+        "family": "Brown",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#896752",
+        "name": "Gold Ochre",
+        "hex": "#DB823D",
+        "family": "Brown",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#523c32",
+        "name": "Brown Ochre",
+        "hex": "#8C4221",
+        "family": "Brown",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#82823a",
+        "name": "Olive Green",
+        "hex": "#A0A719",
+        "family": "Yellow",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      }
+    ]
+  },
+  "bay-horse": {
+    "palette": [
+      {
+        "hex": "#e0e0dd",
+        "pct": 28
+      },
+      {
+        "hex": "#d29e81",
+        "pct": 22
+      },
+      {
+        "hex": "#a47254",
+        "pct": 19
+      },
+      {
+        "hex": "#cbaf76",
+        "pct": 13
+      },
+      {
+        "hex": "#6b513a",
+        "pct": 9
+      },
+      {
+        "hex": "#989a8f",
+        "pct": 8
+      }
+    ],
+    "matches": [
+      {
+        "photo": "#e0e0dd",
+        "name": "Chinese White",
+        "hex": "#FFFFFF",
+        "family": "White",
+        "label": "Neutral match",
+        "cls": "ps-tag--good"
+      },
+      {
+        "photo": "#d29e81",
+        "name": "Cadmium Orange Deep",
+        "hex": "#F46B00",
+        "family": "Orange",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#a47254",
+        "name": "Gold Ochre",
+        "hex": "#DB823D",
+        "family": "Brown",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#cbaf76",
+        "name": "Yellow Ochre Light",
+        "hex": "#B99529",
+        "family": "Orange",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#6b513a",
+        "name": "Raw Sienna",
+        "hex": "#DD9341",
+        "family": "Brown",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      },
+      {
+        "photo": "#989a8f",
+        "name": "Olive",
+        "hex": "#616D29",
+        "family": "Green",
+        "label": "Strong hue match",
+        "cls": "ps-tag--great"
+      }
+    ]
+  }
+}
