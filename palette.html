@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palette Studio — Match a Photo to Blick Paints | Laurie Werth</title>
+  <meta name="description" content="Upload any photo and find the closest Winsor & Newton watercolor matches at Blick, plus a mixing kit to paint the palette yourself. A free tool from artist Laurie Werth.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231b1e26'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='%23f5f0e7' font-family='Georgia,serif' font-size='17'%3ELW%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..560;1,9..144,300..560&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .ps-intro { background: var(--paper); padding-top: clamp(130px, 16vh, 200px); padding-bottom: clamp(30px, 4vw, 50px); text-align: center; }
+    .ps-intro__inner { max-width: 720px; margin: 0 auto; }
+    .ps-title { font-family: var(--font-display); font-weight: 340; font-size: clamp(2.4rem, 5.5vw, 4.4rem); letter-spacing: -0.025em; line-height: 1.02; }
+    .ps-title em { font-style: italic; }
+    .ps-lead { color: #3a3f49; font-size: 1.06rem; line-height: 1.7; max-width: 56ch; margin: 18px auto 0; }
+
+    .ps-tool { background: var(--paper); padding-bottom: var(--section-y); }
+    .ps-drop {
+      max-width: 720px; margin: 0 auto; min-height: 240px; cursor: pointer;
+      background: var(--salt); border: 1.5px dashed rgba(27,30,38,0.28); border-radius: 4px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
+      padding: 40px 24px; text-align: center; transition: border-color .3s var(--ease), background .3s var(--ease);
+    }
+    .ps-drop:hover, .ps-drop--over { border-color: var(--slate); background: #fffdf8; }
+    .ps-drop__icon { width: 46px; height: 46px; color: var(--slate-deep); }
+    .ps-drop__title { font-family: var(--font-display); font-size: 1.5rem; }
+    .ps-drop__hint { font-size: 0.86rem; color: var(--stone); }
+    .ps-drop__note { font-size: 0.74rem; color: var(--stone); margin-top: 4px; }
+
+    .ps-controls { max-width: 720px; margin: 22px auto 0; display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .ps-controls label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--stone); font-weight: 600; }
+    .ps-controls input[type=range] { width: 200px; accent-color: var(--slate-deep); }
+    .ps-controls__val { font-family: var(--font-display); font-size: 1.2rem; min-width: 1.5em; text-align: center; }
+
+    .ps-result { max-width: var(--maxw); margin: clamp(36px,5vw,64px) auto 0; padding-inline: var(--gutter); }
+    .ps-result__grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(28px,4vw,56px); align-items: start; }
+    .ps-preview { position: sticky; top: 100px; }
+    .ps-preview img { width: 100%; border-radius: 3px; box-shadow: var(--shadow-art); background: var(--paper-warm); }
+    .ps-preview__palette { display: flex; margin-top: 14px; border-radius: 3px; overflow: hidden; box-shadow: var(--shadow-soft); }
+    .ps-chip { flex: 1; height: 56px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 5px; }
+    .ps-chip span { font-size: 0.62rem; font-weight: 600; color: rgba(255,255,255,0.92); text-shadow: 0 1px 3px rgba(0,0,0,0.5); }
+    .ps-status { font-size: 0.74rem; color: var(--stone); margin-top: 12px; letter-spacing: 0.02em; }
+
+    .ps-section-label { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.18em; color: var(--slate-deep); margin-bottom: 6px; }
+    .ps-section-title { font-family: var(--font-display); font-weight: 360; font-size: clamp(1.6rem,2.6vw,2.2rem); margin-bottom: 4px; }
+    .ps-section-title em { font-style: italic; }
+    .ps-section-sub { color: var(--stone); font-size: 0.9rem; margin-bottom: 22px; }
+    .ps-block + .ps-block { margin-top: clamp(36px,4vw,52px); }
+
+    .ps-matches { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .ps-card { display: flex; flex-direction: column; gap: 12px; background: var(--salt); border: 1px solid var(--line-soft); padding: 16px; text-decoration: none; color: var(--ink); transition: border-color .3s var(--ease), transform .3s var(--ease); }
+    .ps-card:hover { border-color: var(--stone); transform: translateY(-2px); }
+    .ps-card__swatches { display: flex; align-items: center; gap: 10px; }
+    .ps-card__from, .ps-card__to { width: 38px; height: 38px; border-radius: 3px; box-shadow: inset 0 0 0 1px rgba(27,30,38,0.08); }
+    .ps-card__arrow { color: var(--stone); font-size: 0.9rem; }
+    .ps-card__body { display: flex; flex-direction: column; gap: 6px; flex: 1; }
+    .ps-card__name { font-family: var(--font-display); font-size: 1.12rem; line-height: 1.15; }
+    .ps-tag { align-self: flex-start; font-size: 0.6rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; padding: 3px 9px; border-radius: 40px; }
+    .ps-tag--great { background: #e1efe6; color: #2f5d43; }
+    .ps-tag--good { background: #e7eef3; color: var(--slate-deep); }
+    .ps-tag--ok { background: #f3ece2; color: #8a5a37; }
+    .ps-tag--approx { background: #f1efe8; color: var(--stone); }
+    .ps-card__buy { font-size: 0.66rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: var(--slate-deep); }
+
+    .ps-kit { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .ps-kit-card { display: flex; flex-direction: column; gap: 8px; background: var(--salt); border: 1px solid var(--line-soft); padding: 14px; text-decoration: none; color: var(--ink); transition: border-color .3s var(--ease); }
+    .ps-kit-card:hover { border-color: var(--stone); }
+    .ps-kit-card__swatch { height: 44px; border-radius: 3px; box-shadow: inset 0 0 0 1px rgba(27,30,38,0.08); }
+    .ps-kit-card__name { font-family: var(--font-display); font-size: 1rem; line-height: 1.1; }
+    .ps-kit-card__role { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--stone); }
+    .ps-disclosure { font-style: italic; font-size: 0.8rem; color: var(--stone); margin-top: 22px; max-width: 64ch; }
+
+    @media (max-width: 900px) {
+      .ps-result__grid { grid-template-columns: 1fr; }
+      .ps-preview { position: static; max-width: 460px; margin-inline: auto; }
+    }
+    @media (max-width: 560px) {
+      .ps-matches { grid-template-columns: 1fr; }
+      .ps-kit { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ Header ═══ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Laurie Werth Fine Art — home">
+        <span class="header__logo-name">Laurie <span>Werth</span></span>
+        <span class="header__logo-tag">Ink · Watercolor · Salt</span>
+      </a>
+      <nav class="header__nav" id="mainNav" aria-label="Main navigation">
+        <a href="index.html#collections" class="header__link">Collections</a>
+        <a href="index.html#shop" class="header__link">Shop</a>
+        <a href="index.html#about" class="header__link">About</a>
+        <a href="learn.html" class="header__link">Learn</a>
+        <a href="index.html#commissions" class="header__link">Commissions</a>
+      </nav>
+      <div class="header__actions">
+        <button class="header__cart" id="cartToggle" aria-label="Open cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="header__cart-count" id="cartCount" data-count="0">0</span>
+        </button>
+        <button class="header__mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ═══ Intro ═══ -->
+    <section class="ps-intro">
+      <div class="ps-intro__inner container">
+        <span class="eyebrow" style="color:var(--slate-deep);">Palette Studio · Beta</span>
+        <h1 class="ps-title" style="margin-top:14px;">Find your <em>palette</em></h1>
+        <p class="ps-lead">Upload any photo — a garden, a pet, a landscape — and discover the closest Winsor &amp; Newton watercolors at Blick, plus a compact kit to mix the palette yourself. Everything runs on your device; your photo is never uploaded.</p>
+      </div>
+    </section>
+
+    <!-- ═══ Tool ═══ -->
+    <section class="ps-tool">
+      <div class="container">
+        <div class="ps-drop" id="ps-drop" role="button" tabindex="0" aria-label="Upload a photo">
+          <svg class="ps-drop__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span class="ps-drop__title">Drop a photo here</span>
+          <span class="ps-drop__hint">or click to choose an image</span>
+          <span class="ps-drop__note">JPG or PNG · stays private on your device</span>
+          <input type="file" id="ps-file" accept="image/*" hidden>
+        </div>
+        <div class="ps-controls">
+          <label for="ps-count">Palette size</label>
+          <input type="range" id="ps-count" min="4" max="12" value="6" step="1">
+          <span class="ps-controls__val" id="ps-count-val">6</span>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div class="ps-result" id="ps-result" hidden>
+        <div class="ps-result__grid">
+          <div class="ps-preview">
+            <img id="ps-image" alt="Your uploaded photo">
+            <div class="ps-preview__palette" id="ps-palette"></div>
+            <p class="ps-status" id="ps-status"></p>
+          </div>
+          <div>
+            <div class="ps-block">
+              <div class="ps-section-label">Your Blick palette</div>
+              <h2 class="ps-section-title">Matched <em>watercolors</em></h2>
+              <p class="ps-section-sub">The closest Winsor &amp; Newton Professional Watercolour to each color in your photo.</p>
+              <div class="ps-matches" id="ps-matches"></div>
+            </div>
+            <div class="ps-block">
+              <div class="ps-section-label">Mix it yourself</div>
+              <h2 class="ps-section-title">A compact <em>mixing kit</em></h2>
+              <p class="ps-section-sub">A split-primary set that can mix this palette — tailored to your photo.</p>
+              <div class="ps-kit" id="ps-kit"></div>
+              <p class="ps-disclosure">Closest matches from digital swatches — screen colors vary, so treat these as a starting point. Links go to Blick; as an affiliate, Laurie may earn from qualifying purchases at no extra cost to you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <img class="footer__sig" src="assets/brand/signature-white.png" alt="Laurie Werth signature">
+          <div class="footer__brand">Laurie Werth Fine Art</div>
+          <p class="footer__tagline">Original ink, watercolor &amp; salt botanical paintings, animal portraits, and archival prints. A quiet celebration of wild nature.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Shop</h4>
+          <nav class="footer__links">
+            <a href="index.html#shop" class="footer__link">All Work</a>
+            <a href="index.html#collections" class="footer__link">Ink, Watercolor &amp; Salt</a>
+            <a href="index.html#collections" class="footer__link">Animal Portraits</a>
+            <a href="index.html#collections" class="footer__link">Landscapes</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer__heading">Studio</h4>
+          <nav class="footer__links">
+            <a href="index.html#about" class="footer__link">About Laurie</a>
+            <a href="learn.html" class="footer__link">Learn</a>
+            <a href="palette.html" class="footer__link">Palette Studio</a>
+            <a href="index.html#commissions" class="footer__link">Commissions</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer__heading">Connect</h4>
+          <nav class="footer__links">
+            <a href="https://www.instagram.com/lauriewerthartist/" class="footer__link" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.youtube.com/@lauriewerthartist" class="footer__link" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://www.facebook.com/profile.php?id=61565530684775" class="footer__link" target="_blank" rel="noopener">Facebook</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Laurie Werth Fine Art. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/lauriewerthartist/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@lauriewerthartist" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ Cart Drawer (shared) ═══ -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-label="Shopping cart">
+    <div class="cart-drawer__header">
+      <h3 class="cart-drawer__title">Your Cart</h3>
+      <button class="cart-drawer__close" id="cartClose" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-drawer__items" id="cartItems"></div>
+    <div class="cart-drawer__footer" id="cartFooter" style="display:none;">
+      <div class="cart-drawer__subtotal">
+        <span class="cart-drawer__subtotal-label">Subtotal</span>
+        <span class="cart-drawer__subtotal-value" id="cartSubtotal">$0</span>
+      </div>
+      <p class="cart-drawer__shipping-note">Shipping calculated at checkout</p>
+      <button class="btn btn--primary cart-drawer__checkout" id="checkoutBtn">Proceed to Checkout</button>
+      <p class="cart-drawer__provider-note" id="providerNote"></p>
+    </div>
+  </aside>
+  <div class="modal-overlay" id="modalOverlay"></div>
+  <div class="modal" id="productModal" role="dialog" aria-label="Product details">
+    <button class="modal__close" id="modalClose" aria-label="Close">✕</button>
+    <div class="modal__inner" id="modalContent"></div>
+  </div>
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+  <script src="palette.js"></script>
+</body>
+</html>

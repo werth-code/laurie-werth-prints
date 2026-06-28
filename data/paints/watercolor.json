@@ -1,0 +1,616 @@
+{
+  "brand": "Winsor & Newton",
+  "line": "Professional Watercolour",
+  "medium": "watercolor",
+  "source": "Blick product data — Winsor & Newton Professional Watercolor",
+  "productUrl": "https://www.dickblick.com/products/winsor-newton-professional-watercolor-tubes/",
+  "note": "Swatch hex from Blick product data; approximate (screen colors vary). Buy links resolve via Blick search; swap to CJ/Blick affiliate deep links once approved.",
+  "colors": [
+    {
+      "name": "Alizarin Crimson",
+      "hex": "#BB0031",
+      "family": "Red",
+      "id": 958
+    },
+    {
+      "name": "Antwerp Blue",
+      "hex": "#2A4355",
+      "family": "Blue",
+      "id": 1018
+    },
+    {
+      "name": "Aqua Green",
+      "hex": "#13728F",
+      "family": "Blue-Green",
+      "id": 63233
+    },
+    {
+      "name": "Bismuth Yellow",
+      "hex": "#FFEE00",
+      "family": "Yellow",
+      "id": 992
+    },
+    {
+      "name": "Brown Madder",
+      "hex": "#923329",
+      "family": "Brown",
+      "id": 5554
+    },
+    {
+      "name": "Brown Ochre",
+      "hex": "#8C4221",
+      "family": "Brown",
+      "id": 23689
+    },
+    {
+      "name": "Burnt Sienna",
+      "hex": "#7B331F",
+      "family": "Brown",
+      "id": 8279
+    },
+    {
+      "name": "Burnt Umber",
+      "hex": "#8F5645",
+      "family": "Brown",
+      "id": 1447
+    },
+    {
+      "name": "Cadmium Lemon",
+      "hex": "#FFFF00",
+      "family": "Yellow",
+      "id": 984
+    },
+    {
+      "name": "Cadmium Orange",
+      "hex": "#E78500",
+      "family": "Orange",
+      "id": 1797
+    },
+    {
+      "name": "Cadmium Orange Deep",
+      "hex": "#F46B00",
+      "family": "Orange",
+      "id": 32921
+    },
+    {
+      "name": "Cadmium Red",
+      "hex": "#FD1F03",
+      "family": "Red",
+      "id": 373
+    },
+    {
+      "name": "Cadmium Red Deep",
+      "hex": "#BF0000",
+      "family": "Red",
+      "id": 20106
+    },
+    {
+      "name": "Cadmium Scarlet",
+      "hex": "#EC3225",
+      "family": "Red",
+      "id": 11531
+    },
+    {
+      "name": "Cadmium Yellow",
+      "hex": "#FFE600",
+      "family": "Yellow",
+      "id": 10588
+    },
+    {
+      "name": "Cadmium Yellow Deep",
+      "hex": "#FFAF00",
+      "family": "Yellow",
+      "id": 25523
+    },
+    {
+      "name": "Cadmium Yellow Pale",
+      "hex": "#F3E200",
+      "family": "Yellow",
+      "id": 2237
+    },
+    {
+      "name": "Cadmium-Free Yellow Light",
+      "hex": "#FFF323",
+      "family": "Yellow",
+      "id": 62431
+    },
+    {
+      "name": "Caput Mortuum Violet",
+      "hex": "#6A3628",
+      "family": "Violet",
+      "id": 1024
+    },
+    {
+      "name": "Cerulean Blue",
+      "hex": "#3275B6",
+      "family": "Blue",
+      "id": 1396
+    },
+    {
+      "name": "Cerulean Blue (Red Shade)",
+      "hex": "#399ACC",
+      "family": "Blue",
+      "id": 20087
+    },
+    {
+      "name": "Chinese White",
+      "hex": "#FFFFFF",
+      "family": "White",
+      "id": 947
+    },
+    {
+      "name": "Cobalt Blue",
+      "hex": "#2359DB",
+      "family": "Blue",
+      "id": 25978
+    },
+    {
+      "name": "Cobalt Blue Deep",
+      "hex": "#4B61BF",
+      "family": "Blue",
+      "id": 21936
+    },
+    {
+      "name": "Cobalt Green",
+      "hex": "#32A78D",
+      "family": "Green",
+      "id": 6806
+    },
+    {
+      "name": "Cobalt Green Deep",
+      "hex": "#00563B",
+      "family": "Green",
+      "id": 29180
+    },
+    {
+      "name": "Cobalt Turquoise",
+      "hex": "#326773",
+      "family": "Blue",
+      "id": 16561
+    },
+    {
+      "name": "Cobalt Turquoise Light",
+      "hex": "#00B3B7",
+      "family": "Blue",
+      "id": 1123
+    },
+    {
+      "name": "Cobalt Violet",
+      "hex": "#9141AB",
+      "family": "Violet",
+      "id": 456
+    },
+    {
+      "name": "Davy's Gray",
+      "hex": "#8E8D7E",
+      "family": "Gray",
+      "id": 2200
+    },
+    {
+      "name": "French Ultramarine",
+      "hex": "#1846AB",
+      "family": "Blue",
+      "id": 1008
+    },
+    {
+      "name": "Gold Ochre",
+      "hex": "#DB823D",
+      "family": "Brown",
+      "id": 27395
+    },
+    {
+      "name": "Green Gold",
+      "hex": "#8A9F15",
+      "family": "Green",
+      "id": 8820
+    },
+    {
+      "name": "Hooker's Green",
+      "hex": "#004200",
+      "family": "Green",
+      "id": 11214
+    },
+    {
+      "name": "Indanthrene Blue",
+      "hex": "#3E3B9F",
+      "family": "Blue",
+      "id": 2258
+    },
+    {
+      "name": "Indian Red",
+      "hex": "#9F3916",
+      "family": "Red",
+      "id": 19075
+    },
+    {
+      "name": "Indian Yellow",
+      "hex": "#FF9D13",
+      "family": "Yellow",
+      "id": 14740
+    },
+    {
+      "name": "Indigo",
+      "hex": "#05263B",
+      "family": "Blue",
+      "id": 3737
+    },
+    {
+      "name": "Ivory Black",
+      "hex": "#000000",
+      "family": "Black",
+      "id": 893
+    },
+    {
+      "name": "Lamp Black",
+      "hex": "#000000",
+      "family": "Black",
+      "id": 345
+    },
+    {
+      "name": "Lemon Yellow (Nickel Titanate)",
+      "hex": "#F1DD4A",
+      "family": "Yellow",
+      "id": 1000
+    },
+    {
+      "name": "Lemon Yellow Deep",
+      "hex": "#F0D62B",
+      "family": "Yellow",
+      "id": 20082
+    },
+    {
+      "name": "Light Red",
+      "hex": "#B9463D",
+      "family": "Red",
+      "id": 8666
+    },
+    {
+      "name": "Magnesium Brown",
+      "hex": "#B55E3F",
+      "family": "Brown",
+      "id": 20093
+    },
+    {
+      "name": "Manganese Blue Hue",
+      "hex": "#0279D3",
+      "family": "Blue",
+      "id": 1010
+    },
+    {
+      "name": "Mars Black",
+      "hex": "#3A4149",
+      "family": "Black",
+      "id": 1299
+    },
+    {
+      "name": "Naples Yellow",
+      "hex": "#DAAB50",
+      "family": "Orange",
+      "id": 3719
+    },
+    {
+      "name": "Naples Yellow Deep",
+      "hex": "#D19032",
+      "family": "Orange",
+      "id": 3194142
+    },
+    {
+      "name": "Neutral Tint",
+      "hex": "#030000",
+      "family": "Black",
+      "id": 23023
+    },
+    {
+      "name": "New Gamboge",
+      "hex": "#F1AC1C",
+      "family": "Orange",
+      "id": 23258
+    },
+    {
+      "name": "Olive",
+      "hex": "#616D29",
+      "family": "Green",
+      "id": 56778
+    },
+    {
+      "name": "Olive Green",
+      "hex": "#A0A719",
+      "family": "Yellow",
+      "id": 1028
+    },
+    {
+      "name": "Opera Rose",
+      "hex": "#C4036B",
+      "family": "Red",
+      "id": 20079
+    },
+    {
+      "name": "Oxide of Chromium",
+      "hex": "#007D35",
+      "family": "Green",
+      "id": 2284
+    },
+    {
+      "name": "Paynes Grey",
+      "hex": "#1E2325",
+      "family": "Gray",
+      "id": 7539
+    },
+    {
+      "name": "Permanent Alizarin Crimson",
+      "hex": "#BB3B53",
+      "family": "Red",
+      "id": 966
+    },
+    {
+      "name": "Permanent Carmine",
+      "hex": "#D0003D",
+      "family": "Red",
+      "id": 973
+    },
+    {
+      "name": "Permanent Magenta",
+      "hex": "#9A4D9D",
+      "family": "Violet",
+      "id": 274
+    },
+    {
+      "name": "Permanent Mauve",
+      "hex": "#69327F",
+      "family": "Violet",
+      "id": 20081
+    },
+    {
+      "name": "Permanent Rose",
+      "hex": "#D81E05",
+      "family": "Red",
+      "id": 23097
+    },
+    {
+      "name": "Permanent Sap Green",
+      "hex": "#155D13",
+      "family": "Green",
+      "id": 2285
+    },
+    {
+      "name": "Perylene Green",
+      "hex": "#2A4337",
+      "family": "Green",
+      "id": 20091
+    },
+    {
+      "name": "Perylene Maroon",
+      "hex": "#9D0016",
+      "family": "Red",
+      "id": 5924
+    },
+    {
+      "name": "Perylene Violet",
+      "hex": "#490063",
+      "family": "Violet",
+      "id": 20089
+    },
+    {
+      "name": "Phthalo Turquoise",
+      "hex": "#133656",
+      "family": "Blue",
+      "id": 14770
+    },
+    {
+      "name": "Potter's Pink",
+      "hex": "#B32749",
+      "family": "Red",
+      "id": 20080
+    },
+    {
+      "name": "Quinacridone Gold",
+      "hex": "#D67A10",
+      "family": "Orange",
+      "id": 1735
+    },
+    {
+      "name": "Quinacridone Magenta",
+      "hex": "#82023E",
+      "family": "Red",
+      "id": 13752
+    },
+    {
+      "name": "Quinacridone Red",
+      "hex": "#E40021",
+      "family": "Red",
+      "id": 23399
+    },
+    {
+      "name": "Quinacridone Violet",
+      "hex": "#602E4B",
+      "family": "",
+      "id": 3196510
+    },
+    {
+      "name": "Raw Sienna",
+      "hex": "#DD9341",
+      "family": "Brown",
+      "id": 23599
+    },
+    {
+      "name": "Raw Umber",
+      "hex": "#76571C",
+      "family": "Brown",
+      "id": 19252
+    },
+    {
+      "name": "Rose Dore",
+      "hex": "#C22E27",
+      "family": "Red",
+      "id": 975
+    },
+    {
+      "name": "Rose Madder Genuine",
+      "hex": "#D73A7B",
+      "family": "",
+      "id": 2218
+    },
+    {
+      "name": "Scarlet Lake",
+      "hex": "#FF0000",
+      "family": "Red",
+      "id": 5877
+    },
+    {
+      "name": "Sepia",
+      "hex": "#452E2D",
+      "family": "Brown",
+      "id": 23316
+    },
+    {
+      "name": "Smalt",
+      "hex": "#3E47A6",
+      "family": "Blue",
+      "id": 63232
+    },
+    {
+      "name": "Terre Verte",
+      "hex": "#184E39",
+      "family": "Green",
+      "id": 26006
+    },
+    {
+      "name": "Terre Verte (Yellow Shade)",
+      "hex": "#3D6F39",
+      "family": "Yellow-Green",
+      "id": 27716
+    },
+    {
+      "name": "Titanium White",
+      "hex": "#FFFFFF",
+      "family": "White",
+      "id": 946
+    },
+    {
+      "name": "Transparent Orange",
+      "hex": "#FF7E00",
+      "family": "Orange",
+      "id": 30498
+    },
+    {
+      "name": "Transparent Yellow",
+      "hex": "#FFDD47",
+      "family": "Yellow",
+      "id": 991
+    },
+    {
+      "name": "Turner's Yellow",
+      "hex": "#E8BA12",
+      "family": "Yellow",
+      "id": 1795
+    },
+    {
+      "name": "Ultramarine Blue (Green Shade)",
+      "hex": "#32539D",
+      "family": "Blue",
+      "id": 1007
+    },
+    {
+      "name": "Ultramarine Violet",
+      "hex": "#422997",
+      "family": "Violet",
+      "id": 3462
+    },
+    {
+      "name": "Vandyke Brown",
+      "hex": "#3B0705",
+      "family": "Brown",
+      "id": 18861
+    },
+    {
+      "name": "Venetian Red",
+      "hex": "#923E2A",
+      "family": "",
+      "id": 3193131
+    },
+    {
+      "name": "Winsor Blue (Green Shade)",
+      "hex": "#024B94",
+      "family": "Blue",
+      "id": 1014
+    },
+    {
+      "name": "Winsor Blue (Red Shade)",
+      "hex": "#0337A5",
+      "family": "Blue",
+      "id": 1016
+    },
+    {
+      "name": "Winsor Green (Blue Shade)",
+      "hex": "#035D49",
+      "family": "Blue",
+      "id": 1040
+    },
+    {
+      "name": "Winsor Green (Yellow Shade)",
+      "hex": "#006F46",
+      "family": "Yellow-Green",
+      "id": 1037
+    },
+    {
+      "name": "Winsor Lemon",
+      "hex": "#FAF600",
+      "family": "Yellow",
+      "id": 2246
+    },
+    {
+      "name": "Winsor Orange",
+      "hex": "#FE9C1F",
+      "family": "Orange",
+      "id": 995
+    },
+    {
+      "name": "Winsor Orange (Red Shade)",
+      "hex": "#E8574D",
+      "family": "Red",
+      "id": 20084
+    },
+    {
+      "name": "Winsor Red",
+      "hex": "#ED1C00",
+      "family": "Red",
+      "id": 977
+    },
+    {
+      "name": "Winsor Red Deep",
+      "hex": "#B4132A",
+      "family": "Red",
+      "id": 20086
+    },
+    {
+      "name": "Winsor Violet",
+      "hex": "#45009C",
+      "family": "Violet",
+      "id": 1026
+    },
+    {
+      "name": "Winsor Yellow",
+      "hex": "#FFDF56",
+      "family": "Yellow",
+      "id": 978
+    },
+    {
+      "name": "Winsor Yellow Deep",
+      "hex": "#F9A706",
+      "family": "Orange",
+      "id": 997
+    },
+    {
+      "name": "Yellow Ochre",
+      "hex": "#D79B07",
+      "family": "Yellow",
+      "id": 11918
+    },
+    {
+      "name": "Yellow Ochre Light",
+      "hex": "#B99529",
+      "family": "Orange",
+      "id": 20085
+    }
+  ]
+}
