@@ -224,6 +224,8 @@ h2.heading em { font-style: italic; }
   transition: transform 0.4s var(--ease);
 }
 .header__link:hover::after { transform: scaleX(1); transform-origin: left; }
+/* Palette Studio nav link: present in markup everywhere, hidden on the home page */
+.is-home .header__link--palette { display: none; }
 
 .header__actions { display: flex; align-items: center; gap: 18px; }
 .header__cart { position: relative; display: flex; align-items: center; color: var(--ink); padding: 4px; }
