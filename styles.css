@@ -275,15 +275,13 @@ h2.heading em { font-style: italic; }
 .hero__figure-frame {
   position: relative; background: var(--salt); padding: 14px;
   box-shadow: var(--shadow-art);
-  transform: rotate(-1.2deg);
   transition: transform 0.7s var(--ease);
 }
-.hero__figure:hover .hero__figure-frame { transform: rotate(0deg); }
+.hero__figure:hover .hero__figure-frame { transform: scale(1.012); }
 .hero__figure-frame img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
 .hero__figure-caption {
   margin-top: 18px; padding-left: 4px;
   display: flex; flex-direction: column; gap: 3px;
-  transform: rotate(-1.2deg);
 }
 .hero__figure-caption strong { font-family: var(--font-display); font-style: italic; font-weight: 400; font-size: 1.05rem; }
 .hero__figure-caption span { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--stone); }
@@ -784,7 +782,7 @@ h2.heading em { font-style: italic; }
   .hero { padding-top: 92px; }
   .hero__inner { display: flex; flex-direction: column; gap: 34px; }
   .hero__figure { order: -1; max-width: 100%; }
-  .hero__figure-frame { transform: rotate(-1deg); }
+  .hero__figure-frame { transform: none; }
   .hero__figure-frame img { aspect-ratio: 1 / 1; }
 }
 
